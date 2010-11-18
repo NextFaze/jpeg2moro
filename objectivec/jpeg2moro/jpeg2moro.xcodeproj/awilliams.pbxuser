@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = B5BF572B1294DA3A00B2AA69 /* UnitTest */;
+		activeSDKPreference = iphonesimulator4.2;
+		activeTarget = BD80A3A10F894C7F0067878C /* UnitTest */;
+		addToTargets = (
+			BD80A3A10F894C7F0067878C /* UnitTest */,
+			D2AAC07D0554694100DB518D /* jpeg2moro */,
+		);
+		codeSenseManager = B5BF573C1294DA4F00B2AA69 /* Code sense */;
+		executables = (
+			B5BF572B1294DA3A00B2AA69 /* UnitTest */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					938,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					850,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 311755703;
+			PBXWorkspaceStateSaveDate = 311755703;
+		};
+		perUserProjectItems = {
+			B52FC12D1295041D00F23AC0 /* PBXTextBookmark */ = B52FC12D1295041D00F23AC0 /* PBXTextBookmark */;
+			B52FC12E1295041D00F23AC0 /* PBXTextBookmark */ = B52FC12E1295041D00F23AC0 /* PBXTextBookmark */;
+			B52FC12F1295041D00F23AC0 /* PBXTextBookmark */ = B52FC12F1295041D00F23AC0 /* PBXTextBookmark */;
+			B52FC1301295041D00F23AC0 /* PBXTextBookmark */ = B52FC1301295041D00F23AC0 /* PBXTextBookmark */;
+			B52FC1311295041D00F23AC0 /* PBXTextBookmark */ = B52FC1311295041D00F23AC0 /* PBXTextBookmark */;
+			B52FC1351295041D00F23AC0 /* PBXTextBookmark */ = B52FC1351295041D00F23AC0 /* PBXTextBookmark */;
+			B53162A01294FCF200BB19B7 /* PBXTextBookmark */ = B53162A01294FCF200BB19B7 /* PBXTextBookmark */;
+		};
+		sourceControlManager = B5BF573B1294DA4F00B2AA69 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	32DBCF5E0370ADEE00C91783 /* jpeg2moro_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 480}}";
+			sepNavSelRange = "{834, 0}";
+			sepNavVisRange = "{0, 834}";
+		};
+	};
+	B52FC12D1295041D00F23AC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B531620D1294E67700BB19B7 /* JPEG2moro.m */;
+		name = "JPEG2moro.m: 11";
+		rLen = 0;
+		rLoc = 190;
+		rType = 0;
+		vrLen = 1046;
+		vrLoc = 3;
+	};
+	B52FC12E1295041D00F23AC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B531620C1294E67700BB19B7 /* JPEG2moro.h */;
+		name = "JPEG2moro.h: 13";
+		rLen = 0;
+		rLoc = 224;
+		rType = 0;
+		vrLen = 441;
+		vrLoc = 0;
+	};
+	B52FC12F1295041D00F23AC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B53162841294F7DE00BB19B7 /* JPEG2moroInflater.m */;
+		name = "JPEG2moroInflater.m: 57";
+		rLen = 0;
+		rLoc = 1417;
+		rType = 0;
+		vrLen = 1146;
+		vrLoc = 1274;
+	};
+	B52FC1301295041D00F23AC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B53162B71294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m */;
+		name = "JPEG2moroInflaterTestCase.m: 63";
+		rLen = 0;
+		rLoc = 1799;
+		rType = 0;
+		vrLen = 1192;
+		vrLoc = 671;
+	};
+	B52FC1311295041D00F23AC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B53162B71294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m */;
+		name = "JPEG2moroInflaterTestCase.m: 40";
+		rLen = 0;
+		rLoc = 1043;
+		rType = 0;
+		vrLen = 1192;
+		vrLoc = 671;
+	};
+	B52FC1351295041D00F23AC0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B52FC1361295041D00F23AC0 /* CGColorSpace.h */;
+		name = "CGColorSpace.h: 16";
+		rLen = 25;
+		rLoc = 334;
+		rType = 0;
+		vrLen = 1614;
+		vrLoc = 0;
+	};
+	B52FC1361295041D00F23AC0 /* CGColorSpace.h */ = {
+		isa = PBXFileReference;
+		name = CGColorSpace.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorSpace.h;
+		sourceTree = "<absolute>";
+	};
+	B531620C1294E67700BB19B7 /* JPEG2moro.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1116, 571}}";
+			sepNavSelRange = "{224, 0}";
+			sepNavVisRange = "{0, 441}";
+		};
+	};
+	B531620D1294E67700BB19B7 /* JPEG2moro.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1116, 1417}}";
+			sepNavSelRange = "{190, 0}";
+			sepNavVisRange = "{3, 1046}";
+		};
+	};
+	B53162831294F7DE00BB19B7 /* JPEG2moroInflater.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 480}}";
+			sepNavSelRange = "{296, 0}";
+			sepNavVisRange = "{0, 296}";
+		};
+	};
+	B53162841294F7DE00BB19B7 /* JPEG2moroInflater.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1116, 2041}}";
+			sepNavSelRange = "{1417, 0}";
+			sepNavVisRange = "{1274, 1146}";
+		};
+	};
+	B53162A01294FCF200BB19B7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B53162A11294FCF200BB19B7 /* CGColorSpace.h */;
+		name = "CGColorSpace.h: 16";
+		rLen = 25;
+		rLoc = 334;
+		rType = 0;
+		vrLen = 1614;
+		vrLoc = 0;
+	};
+	B53162A11294FCF200BB19B7 /* CGColorSpace.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CGColorSpace.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorSpace.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {859, 3497}}";
+			sepNavSelRange = "{334, 25}";
+			sepNavVisRange = "{0, 1614}";
+			sepNavWindowFrame = "{{15, 0}, {918, 878}}";
+		};
+	};
+	B53162B71294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1116, 910}}";
+			sepNavSelRange = "{1043, 0}";
+			sepNavVisRange = "{671, 1192}";
+		};
+	};
+	B5BF572B1294DA3A00B2AA69 /* UnitTest */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = UnitTest;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	B5BF573B1294DA4F00B2AA69 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B5BF573C1294DA4F00B2AA69 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	BD80A3A10F894C7F0067878C /* UnitTest */ = {
+		activeExec = 0;
+		executables = (
+			B5BF572B1294DA3A00B2AA69 /* UnitTest */,
+		);
+	};
+	D2AAC07D0554694100DB518D /* jpeg2moro */ = {
+		activeExec = 0;
+	};
+}

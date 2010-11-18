@@ -1,0 +1,24 @@
+
+JPEG format with 2moro mobile alpha channel extension.
+
+TODO: extend APP10 segment to allow abitrary data chunks? (ALPH chunk for alpha data?)
+
+----------------------------------------------------------------------
+
+We use the APP10 marker segment (0xFFE9) to store alpha channel information about a JPEG image.
+
+The APP10 segment should appear just before the SOS (start of scan) segment in the JFIF headers.
+
+The alpha channel may be represented as 1 bit, 8 bit, or 16 bit values (16 bit data should be stored in network byte order).
+
+An alpha value of zero represents full transparency, and a value of 2^(bitdepth)-1 represents a fully opaque pixel. Intermediate values indicate partially transparent pixels that can be combined with a background image to yield a composite image.
+
+The segment contains a single byte representing the bit depth of the alpha channel (0x01, 0x08 or 0x10), followed by the alpha channel data compressed using the DEFLATE algorithm.
+
+The full marker segment is (bytes)
+
+[0xFF, 0xE9, length MSB, length LSB, bit depth, compressed data...]
+
+where length is an unsigned short (2 bytes) in network byte order, representing the number of bytes in the data segment.
+length includes the length of the compressed alpha data, itself, and the bit depth byte.
+length is therefore equal to length(compressed data) + 3.

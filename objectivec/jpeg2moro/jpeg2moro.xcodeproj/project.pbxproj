@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49EC6F7112952D55003EF0C0 /* TestAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC6F6F12952D55003EF0C0 /* TestAppViewController.m */; };
+		49EC6F7212952D55003EF0C0 /* TestAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EC6F7012952D55003EF0C0 /* TestAppViewController.xib */; };
+		49EC6F7612952DA7003EF0C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC6F7312952DA7003EF0C0 /* main.m */; };
+		49EC6F7712952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC6F7512952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m */; };
+		49EC6FDD12953559003EF0C0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EC6FDC12953559003EF0C0 /* MainWindow.xib */; };
+		49EC6FFE12953677003EF0C0 /* JPEG2moroTestApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49EC6F6212952CD6003EF0C0 /* JPEG2moroTestApp-Info.plist */; };
+		49EC702612953812003EF0C0 /* meditate-alpha-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC702412953812003EF0C0 /* meditate-alpha-1.jpg */; };
+		49EC7031129538BF003EF0C0 /* JPEG2moro.m in Sources */ = {isa = PBXBuildFile; fileRef = B531620D1294E67700BB19B7 /* JPEG2moro.m */; };
+		49EC7032129538BF003EF0C0 /* JPEG2moroInflater.m in Sources */ = {isa = PBXBuildFile; fileRef = B53162841294F7DE00BB19B7 /* JPEG2moroInflater.m */; };
+		49EC7036129538E7003EF0C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EC7035129538E7003EF0C0 /* CoreGraphics.framework */; };
+		49EC7038129538E7003EF0C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EC7037129538E7003EF0C0 /* Foundation.framework */; };
+		49EC703A129538E7003EF0C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EC7039129538E7003EF0C0 /* UIKit.framework */; };
+		49EC703C129538E7003EF0C0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EC703B129538E7003EF0C0 /* libz.dylib */; };
+		49EC706112953A44003EF0C0 /* JPEG2moroTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC706012953A44003EF0C0 /* JPEG2moroTestCase.m */; };
+		49EC706912953B21003EF0C0 /* meditate-alpha-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC706812953B21003EF0C0 /* meditate-alpha-1.jpg */; };
+		49EC706E12953BF6003EF0C0 /* JPEG2moroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC706D12953BF6003EF0C0 /* JPEG2moroParser.m */; };
+		49EC706F12953BF6003EF0C0 /* JPEG2moroParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EC706C12953BF6003EF0C0 /* JPEG2moroParser.h */; };
+		49EC707012953BF6003EF0C0 /* JPEG2moroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC706D12953BF6003EF0C0 /* JPEG2moroParser.m */; };
+		49EC707112953BF6003EF0C0 /* JPEG2moroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC706D12953BF6003EF0C0 /* JPEG2moroParser.m */; };
+		49EC70FB12954F24003EF0C0 /* wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EC70FA12954F24003EF0C0 /* wallpaper.png */; };
+		49EC7105129554CD003EF0C0 /* meditate-alpha-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC7103129554CD003EF0C0 /* meditate-alpha-8.jpg */; };
+		49EC7106129554CD003EF0C0 /* meditate-alpha-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC7104129554CD003EF0C0 /* meditate-alpha-16.jpg */; };
+		49EC717C12955BFA003EF0C0 /* alphatest-alpha-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC717912955BFA003EF0C0 /* alphatest-alpha-1.jpg */; };
+		49EC717D12955BFA003EF0C0 /* alphatest-alpha-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC717A12955BFA003EF0C0 /* alphatest-alpha-8.jpg */; };
+		49EC717E12955BFA003EF0C0 /* alphatest-alpha-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC717B12955BFA003EF0C0 /* alphatest-alpha-16.jpg */; };
+		B531620E1294E67700BB19B7 /* JPEG2moro.m in Sources */ = {isa = PBXBuildFile; fileRef = B531620D1294E67700BB19B7 /* JPEG2moro.m */; };
+		B531620F1294E67700BB19B7 /* JPEG2moro.h in Headers */ = {isa = PBXBuildFile; fileRef = B531620C1294E67700BB19B7 /* JPEG2moro.h */; };
+		B53162101294E67700BB19B7 /* JPEG2moro.m in Sources */ = {isa = PBXBuildFile; fileRef = B531620D1294E67700BB19B7 /* JPEG2moro.m */; };
+		B53162821294F5A300BB19B7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B53162811294F5A300BB19B7 /* libz.dylib */; };
+		B53162851294F7DE00BB19B7 /* JPEG2moroInflater.h in Headers */ = {isa = PBXBuildFile; fileRef = B53162831294F7DE00BB19B7 /* JPEG2moroInflater.h */; };
+		B53162861294F7DE00BB19B7 /* JPEG2moroInflater.m in Sources */ = {isa = PBXBuildFile; fileRef = B53162841294F7DE00BB19B7 /* JPEG2moroInflater.m */; };
+		B53162871294F7DE00BB19B7 /* JPEG2moroInflater.m in Sources */ = {isa = PBXBuildFile; fileRef = B53162841294F7DE00BB19B7 /* JPEG2moroInflater.m */; };
+		B53162A81294FD2600BB19B7 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53162A41294FD2600BB19B7 /* GTMIPhoneUnitTestDelegate.m */; };
+		B53162A91294FD2600BB19B7 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = B53162A51294FD2600BB19B7 /* GTMIPhoneUnitTestMain.m */; };
+		B53162AA1294FD2600BB19B7 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B53162A71294FD2600BB19B7 /* GTMSenTestCase.m */; };
+		B53162B81294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B53162B71294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m */; };
+		B53162C21294FF1500BB19B7 /* compressed.dat in Resources */ = {isa = PBXBuildFile; fileRef = B53162C01294FF1500BB19B7 /* compressed.dat */; };
+		B53162C31294FF1500BB19B7 /* uncompressed.dat in Resources */ = {isa = PBXBuildFile; fileRef = B53162C11294FF1500BB19B7 /* uncompressed.dat */; };
+		B53162D41295008C00BB19B7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B53162811294F5A300BB19B7 /* libz.dylib */; };
+		B53162D51295009600BB19B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668540F83F84100ABF98B /* Foundation.framework */; };
+		B53162D6129500A000BB19B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668560F83F84100ABF98B /* UIKit.framework */; };
+		B53162D9129500BC00BB19B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */; };
+		B53162E7129501D500BB19B7 /* Debugging.h in Headers */ = {isa = PBXBuildFile; fileRef = B53162E6129501D500BB19B7 /* Debugging.h */; };
+		BD6668550F83F84100ABF98B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668540F83F84100ABF98B /* Foundation.framework */; };
+		BD6668570F83F84100ABF98B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668560F83F84100ABF98B /* UIKit.framework */; };
+		BD6668F80F83F87C00ABF98B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */; };
+		BD80A3EC0F8A69980067878C /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
+		BD80A3F90F8A6A180067878C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD80A5590F8BC7BF0067878C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = jpeg2moro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD80A3F80F8A69DC0067878C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD80A3F90F8A6A180067878C /* OCMock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		32DBCF5E0370ADEE00C91783 /* jpeg2moro_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeg2moro_Prefix.pch; sourceTree = "<group>"; };
+		49EC6F6012952CD6003EF0C0 /* JPEG2moroTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPEG2moroTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EC6F6212952CD6003EF0C0 /* JPEG2moroTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "JPEG2moroTestApp-Info.plist"; path = "../JPEG2moroTestApp-Info.plist"; sourceTree = "<group>"; };
+		49EC6F6E12952D55003EF0C0 /* TestAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppViewController.h; sourceTree = "<group>"; };
+		49EC6F6F12952D55003EF0C0 /* TestAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppViewController.m; sourceTree = "<group>"; };
+		49EC6F7012952D55003EF0C0 /* TestAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAppViewController.xib; sourceTree = "<group>"; };
+		49EC6F7312952DA7003EF0C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49EC6F7412952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestApp_iPhoneAppDelegate.h; sourceTree = "<group>"; };
+		49EC6F7512952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestApp_iPhoneAppDelegate.m; sourceTree = "<group>"; };
+		49EC6FDC12953559003EF0C0 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		49EC702412953812003EF0C0 /* meditate-alpha-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "meditate-alpha-1.jpg"; sourceTree = "<group>"; };
+		49EC7035129538E7003EF0C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49EC7037129538E7003EF0C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49EC7039129538E7003EF0C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49EC703B129538E7003EF0C0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		49EC706012953A44003EF0C0 /* JPEG2moroTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moroTestCase.m; path = Tests/JPEG2moroTestCase.m; sourceTree = "<group>"; };
+		49EC706812953B21003EF0C0 /* meditate-alpha-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "meditate-alpha-1.jpg"; sourceTree = "<group>"; };
+		49EC706C12953BF6003EF0C0 /* JPEG2moroParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPEG2moroParser.h; path = Classes/JPEG2moroParser.h; sourceTree = "<group>"; };
+		49EC706D12953BF6003EF0C0 /* JPEG2moroParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moroParser.m; path = Classes/JPEG2moroParser.m; sourceTree = "<group>"; };
+		49EC70FA12954F24003EF0C0 /* wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallpaper.png; sourceTree = "<group>"; };
+		49EC7103129554CD003EF0C0 /* meditate-alpha-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "meditate-alpha-8.jpg"; sourceTree = "<group>"; };
+		49EC7104129554CD003EF0C0 /* meditate-alpha-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "meditate-alpha-16.jpg"; sourceTree = "<group>"; };
+		49EC717912955BFA003EF0C0 /* alphatest-alpha-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alphatest-alpha-1.jpg"; sourceTree = "<group>"; };
+		49EC717A12955BFA003EF0C0 /* alphatest-alpha-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alphatest-alpha-8.jpg"; sourceTree = "<group>"; };
+		49EC717B12955BFA003EF0C0 /* alphatest-alpha-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alphatest-alpha-16.jpg"; sourceTree = "<group>"; };
+		B531620C1294E67700BB19B7 /* JPEG2moro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPEG2moro.h; path = Classes/JPEG2moro.h; sourceTree = "<group>"; };
+		B531620D1294E67700BB19B7 /* JPEG2moro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moro.m; path = Classes/JPEG2moro.m; sourceTree = "<group>"; };
+		B53162811294F5A300BB19B7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B53162831294F7DE00BB19B7 /* JPEG2moroInflater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPEG2moroInflater.h; path = Classes/JPEG2moroInflater.h; sourceTree = "<group>"; };
+		B53162841294F7DE00BB19B7 /* JPEG2moroInflater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moroInflater.m; path = Classes/JPEG2moroInflater.m; sourceTree = "<group>"; };
+		B53162A21294FD2600BB19B7 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = GoogleToolbox/GTMDefines.h; sourceTree = "<group>"; };
+		B53162A31294FD2600BB19B7 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = GoogleToolbox/GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
+		B53162A41294FD2600BB19B7 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestDelegate.m; path = GoogleToolbox/GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
+		B53162A51294FD2600BB19B7 /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = GoogleToolbox/GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
+		B53162A61294FD2600BB19B7 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = GoogleToolbox/GTMSenTestCase.h; sourceTree = "<group>"; };
+		B53162A71294FD2600BB19B7 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = GoogleToolbox/GTMSenTestCase.m; sourceTree = "<group>"; };
+		B53162B71294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moroInflaterTestCase.m; path = Tests/JPEG2moroInflaterTestCase.m; sourceTree = "<group>"; };
+		B53162C01294FF1500BB19B7 /* compressed.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = compressed.dat; sourceTree = "<group>"; };
+		B53162C11294FF1500BB19B7 /* uncompressed.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = uncompressed.dat; sourceTree = "<group>"; };
+		B53162E6129501D500BB19B7 /* Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Debugging.h; path = Classes/Debugging.h; sourceTree = "<group>"; };
+		BD6668540F83F84100ABF98B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BD6668560F83F84100ABF98B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BD80A3A20F894C7F0067878C /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD80A3EB0F8A69980067878C /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
+		BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BD80A79E0F8D3B310067878C /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunIPhoneUnitTest.sh; sourceTree = SOURCE_ROOT; };
+		D2AAC07E0554694100DB518D /* libjpeg2moro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjpeg2moro.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49EC6F5E12952CD6003EF0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EC7036129538E7003EF0C0 /* CoreGraphics.framework in Frameworks */,
+				49EC7038129538E7003EF0C0 /* Foundation.framework in Frameworks */,
+				49EC703A129538E7003EF0C0 /* UIKit.framework in Frameworks */,
+				49EC703C129538E7003EF0C0 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD80A3A00F894C7F0067878C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD80A3EC0F8A69980067878C /* OCMock.framework in Frameworks */,
+				B53162D41295008C00BB19B7 /* libz.dylib in Frameworks */,
+				B53162D51295009600BB19B7 /* Foundation.framework in Frameworks */,
+				B53162D6129500A000BB19B7 /* UIKit.framework in Frameworks */,
+				B53162D9129500BC00BB19B7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6668550F83F84100ABF98B /* Foundation.framework in Frameworks */,
+				BD6668570F83F84100ABF98B /* UIKit.framework in Frameworks */,
+				BD6668F80F83F87C00ABF98B /* CoreGraphics.framework in Frameworks */,
+				B53162821294F5A300BB19B7 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libjpeg2moro.a */,
+				BD80A3A20F894C7F0067878C /* UnitTest.app */,
+				49EC6F6012952CD6003EF0C0 /* JPEG2moroTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* jpeg2moro */ = {
+			isa = PBXGroup;
+			children = (
+				49EC6F6D12952D3B003EF0C0 /* TestApp */,
+				BD849B6E0F8921ED00EB1682 /* GoogleToolbox */,
+				BD849B6C0F8921BB00EB1682 /* UnitTests */,
+				08FB77AEFE84172EC02AAC07 /* Source */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */,
+				BD80A79E0F8D3B310067878C /* RunIPhoneUnitTest.sh */,
+				B53162811294F5A300BB19B7 /* libz.dylib */,
+				49EC7035129538E7003EF0C0 /* CoreGraphics.framework */,
+				49EC7037129538E7003EF0C0 /* Foundation.framework */,
+				49EC7039129538E7003EF0C0 /* UIKit.framework */,
+				49EC703B129538E7003EF0C0 /* libz.dylib */,
+			);
+			name = jpeg2moro;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD80A3EB0F8A69980067878C /* OCMock.framework */,
+				BD6668560F83F84100ABF98B /* UIKit.framework */,
+				BD6668540F83F84100ABF98B /* Foundation.framework */,
+				BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B53162E6129501D500BB19B7 /* Debugging.h */,
+				B531620C1294E67700BB19B7 /* JPEG2moro.h */,
+				B531620D1294E67700BB19B7 /* JPEG2moro.m */,
+				B53162831294F7DE00BB19B7 /* JPEG2moroInflater.h */,
+				B53162841294F7DE00BB19B7 /* JPEG2moroInflater.m */,
+				49EC706C12953BF6003EF0C0 /* JPEG2moroParser.h */,
+				49EC706D12953BF6003EF0C0 /* JPEG2moroParser.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* jpeg2moro_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		49EC6F6D12952D3B003EF0C0 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				49EC702812953816003EF0C0 /* images */,
+				49EC6FDC12953559003EF0C0 /* MainWindow.xib */,
+				49EC6F6212952CD6003EF0C0 /* JPEG2moroTestApp-Info.plist */,
+				49EC6F7312952DA7003EF0C0 /* main.m */,
+				49EC6F7412952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.h */,
+				49EC6F7512952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m */,
+				49EC6F6E12952D55003EF0C0 /* TestAppViewController.h */,
+				49EC6F6F12952D55003EF0C0 /* TestAppViewController.m */,
+				49EC6F7012952D55003EF0C0 /* TestAppViewController.xib */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		49EC702812953816003EF0C0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				49EC717912955BFA003EF0C0 /* alphatest-alpha-1.jpg */,
+				49EC717A12955BFA003EF0C0 /* alphatest-alpha-8.jpg */,
+				49EC717B12955BFA003EF0C0 /* alphatest-alpha-16.jpg */,
+				49EC7103129554CD003EF0C0 /* meditate-alpha-8.jpg */,
+				49EC7104129554CD003EF0C0 /* meditate-alpha-16.jpg */,
+				49EC70FA12954F24003EF0C0 /* wallpaper.png */,
+				49EC702412953812003EF0C0 /* meditate-alpha-1.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		B53162BF1294FF1500BB19B7 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				49EC706812953B21003EF0C0 /* meditate-alpha-1.jpg */,
+				B53162C01294FF1500BB19B7 /* compressed.dat */,
+				B53162C11294FF1500BB19B7 /* uncompressed.dat */,
+			);
+			name = fixtures;
+			path = Tests/fixtures;
+			sourceTree = "<group>";
+		};
+		BD849B6C0F8921BB00EB1682 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B53162BF1294FF1500BB19B7 /* fixtures */,
+				B53162B71294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m */,
+				49EC706012953A44003EF0C0 /* JPEG2moroTestCase.m */,
+			);
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
+		BD849B6E0F8921ED00EB1682 /* GoogleToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				B53162A21294FD2600BB19B7 /* GTMDefines.h */,
+				B53162A31294FD2600BB19B7 /* GTMIPhoneUnitTestDelegate.h */,
+				B53162A41294FD2600BB19B7 /* GTMIPhoneUnitTestDelegate.m */,
+				B53162A51294FD2600BB19B7 /* GTMIPhoneUnitTestMain.m */,
+				B53162A61294FD2600BB19B7 /* GTMSenTestCase.h */,
+				B53162A71294FD2600BB19B7 /* GTMSenTestCase.m */,
+			);
+			name = GoogleToolbox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531620F1294E67700BB19B7 /* JPEG2moro.h in Headers */,
+				B53162851294F7DE00BB19B7 /* JPEG2moroInflater.h in Headers */,
+				B53162E7129501D500BB19B7 /* Debugging.h in Headers */,
+				49EC706F12953BF6003EF0C0 /* JPEG2moroParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		49EC6F5F12952CD6003EF0C0 /* JPEG2moroTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49EC6F6512952CD8003EF0C0 /* Build configuration list for PBXNativeTarget "JPEG2moroTestApp" */;
+			buildPhases = (
+				49EC6F5C12952CD6003EF0C0 /* Resources */,
+				49EC6F5D12952CD6003EF0C0 /* Sources */,
+				49EC6F5E12952CD6003EF0C0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPEG2moroTestApp;
+			productName = JPEG2moroTestApp;
+			productReference = 49EC6F6012952CD6003EF0C0 /* JPEG2moroTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD80A3A10F894C7F0067878C /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD80A3B30F894CAE0067878C /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				BD80A3F80F8A69DC0067878C /* CopyFiles */,
+				BD80A39E0F894C7F0067878C /* Resources */,
+				BD80A39F0F894C7F0067878C /* Sources */,
+				BD80A3A00F894C7F0067878C /* Frameworks */,
+				BD80A3C90F894CDD0067878C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD80A55A0F8BC7BF0067878C /* PBXTargetDependency */,
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = BD80A3A20F894C7F0067878C /* UnitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2AAC07D0554694100DB518D /* jpeg2moro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "jpeg2moro" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jpeg2moro;
+			productName = jpeg2moro;
+			productReference = D2AAC07E0554694100DB518D /* libjpeg2moro.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "2moro mobile";
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "jpeg2moro" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* jpeg2moro */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* jpeg2moro */,
+				BD80A3A10F894C7F0067878C /* UnitTest */,
+				49EC6F5F12952CD6003EF0C0 /* JPEG2moroTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49EC6F5C12952CD6003EF0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EC6F7212952D55003EF0C0 /* TestAppViewController.xib in Resources */,
+				49EC6FDD12953559003EF0C0 /* MainWindow.xib in Resources */,
+				49EC6FFE12953677003EF0C0 /* JPEG2moroTestApp-Info.plist in Resources */,
+				49EC702612953812003EF0C0 /* meditate-alpha-1.jpg in Resources */,
+				49EC70FB12954F24003EF0C0 /* wallpaper.png in Resources */,
+				49EC7105129554CD003EF0C0 /* meditate-alpha-8.jpg in Resources */,
+				49EC7106129554CD003EF0C0 /* meditate-alpha-16.jpg in Resources */,
+				49EC717C12955BFA003EF0C0 /* alphatest-alpha-1.jpg in Resources */,
+				49EC717D12955BFA003EF0C0 /* alphatest-alpha-8.jpg in Resources */,
+				49EC717E12955BFA003EF0C0 /* alphatest-alpha-16.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD80A39E0F894C7F0067878C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53162C21294FF1500BB19B7 /* compressed.dat in Resources */,
+				B53162C31294FF1500BB19B7 /* uncompressed.dat in Resources */,
+				49EC706912953B21003EF0C0 /* meditate-alpha-1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD80A3C90F894CDD0067878C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\"$GTM_PATH/UnitTesting/RunIPhoneUnitTest.sh\"\n\n\"$PROJECT_DIR/RunIPhoneUnitTest.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49EC6F5D12952CD6003EF0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EC6F7112952D55003EF0C0 /* TestAppViewController.m in Sources */,
+				49EC6F7612952DA7003EF0C0 /* main.m in Sources */,
+				49EC6F7712952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m in Sources */,
+				49EC7031129538BF003EF0C0 /* JPEG2moro.m in Sources */,
+				49EC7032129538BF003EF0C0 /* JPEG2moroInflater.m in Sources */,
+				49EC706E12953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD80A39F0F894C7F0067878C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531620E1294E67700BB19B7 /* JPEG2moro.m in Sources */,
+				B53162871294F7DE00BB19B7 /* JPEG2moroInflater.m in Sources */,
+				B53162A81294FD2600BB19B7 /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				B53162A91294FD2600BB19B7 /* GTMIPhoneUnitTestMain.m in Sources */,
+				B53162AA1294FD2600BB19B7 /* GTMSenTestCase.m in Sources */,
+				B53162B81294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m in Sources */,
+				49EC706112953A44003EF0C0 /* JPEG2moroTestCase.m in Sources */,
+				49EC707112953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53162101294E67700BB19B7 /* JPEG2moro.m in Sources */,
+				B53162861294F7DE00BB19B7 /* JPEG2moroInflater.m in Sources */,
+				49EC707012953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD80A55A0F8BC7BF0067878C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* jpeg2moro */;
+			targetProxy = BD80A5590F8BC7BF0067878C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = jpeg2moro_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "JPEG2MORO_DEBUG=1";
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG=1";
+				PRODUCT_NAME = jpeg2moro;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = jpeg2moro_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = jpeg2moro;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+		49EC6F6312952CD8003EF0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = jpeg2moro_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"JPEG2MORO_DEBUG=1",
+				);
+				INFOPLIST_FILE = "JPEG2moroTestApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = JPEG2moroTestApp;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		49EC6F6412952CD8003EF0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = jpeg2moro_Prefix.pch;
+				INFOPLIST_FILE = "JPEG2moroTestApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = JPEG2moroTestApp;
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BD80A3A40F894C800067878C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = jpeg2moro_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"JPEG2MORO_DEBUG=1",
+					"DEBUG=1",
+					"SOURCE_ROOT=$(SOURCE_ROOT)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTest;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+			};
+			name = Debug;
+		};
+		BD80A3A50F894C800067878C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GTM_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTest;
+				SDKROOT = iphonesimulator2.2.1;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "jpeg2moro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "jpeg2moro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49EC6F6512952CD8003EF0C0 /* Build configuration list for PBXNativeTarget "JPEG2moroTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EC6F6312952CD8003EF0C0 /* Debug */,
+				49EC6F6412952CD8003EF0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD80A3B30F894CAE0067878C /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD80A3A40F894C800067878C /* Debug */,
+				BD80A3A50F894C800067878C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

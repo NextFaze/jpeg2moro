@@ -1,0 +1,84 @@
+#!/usr/bin/env ruby
+#
+
+$:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+
+require 'jpeg2moro'
+require 'getoptlong'
+
+ARG_SPEC = [ [ '--help', '-h', GetoptLong::NO_ARGUMENT ],
+             [ '--test', '-n', GetoptLong::NO_ARGUMENT ],
+             [ '--output', '-o', GetoptLong::REQUIRED_ARGUMENT ],
+             [ '--debug', '-d', GetoptLong::NO_ARGUMENT ],
+             [ '--alpha-depth', '-a', GetoptLong::REQUIRED_ARGUMENT ],
+           ]
+
+private
+
+# parse command line arguments
+def command_line_options
+  opts = GetoptLong.new(*ARG_SPEC)
+  options = {}
+  opts.each do |opt,arg|
+    opt[0,2] = ''
+    opt = opt.gsub(/-/, '_').to_sym
+    case opt
+    when :help
+      puts usage
+      exit 0
+    else
+      options[opt] = arg ? arg : true
+    end
+  end
+  options
+end
+
+def usage
+  usage = <<EOM
+jpeg2moro - converts image files to jpeg2moro format
+usage: jpeg2moro [OPTIONS] [image_file] ...
+
+options:
+  --help, -h:        this help message
+  --output, -o:      specify output filename
+  --debug, -d:       turn on debugging output and file dumping
+  --alpha-depth, -a: set depth for alpha channel
+
+EOM
+end
+
+def output_filename(input)
+  file = File.basename(input)
+  file = file.sub(/\.[^.]+$/, '')
+  file + ".jpg"
+end
+
+begin
+  opts = command_line_options
+  input_files = ARGV
+
+  #opts[:input] = params.pop if !opts[:input] && $stdin.tty?
+
+  JPEG2moro.debug = opts[:debug]
+
+  if input_files.length == 0
+    puts usage
+  elsif opts[:output] && input_files.length > 1
+    puts "ERROR: output file option can only be used with one input file"
+    puts usage
+    exit 1
+  end
+
+  # convert input files to jpeg2moro format
+  input_files.each do |input_file|
+    output_file = opts[:output] || output_filename(input_file)
+    if output_file == input_file
+      puts "error: input file '#{input_file}' would overwrite itself, skipping"
+      next
+    end
+    jpeg = JPEG2moro.new(input_file)
+    output = jpeg.convert(:depth => opts[:alpha_depth])
+    File.open(output_file, "w") { |f| f.print output }
+  end
+
+end
