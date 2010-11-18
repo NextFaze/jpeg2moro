@@ -1,195 +1,0 @@
-Tjpeg2moro
-v7
-r0
-t311782316.691539
-cCheck dependencies
-cProcessPCH /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-cmzdsucqbayazcaafbduphgbrguu/jpeg2moro_Prefix.pch.gch jpeg2moro_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moro.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroInflater.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroParser.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLibtool /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/libjpeg2moro.a normal i386
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
-c000000004C6C30170000000000000110
-t1282158615
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004C5A4DB60000000000295900
-t1280986550
-s2709760
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004C5A4DB0000000000029D580
-t1280986544
-s2741632
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004C5A4DA10000000000001466
-t1280986529
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004C6241ED00000000000009CD
-t1281507821
-s2509
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004C6242840000000001E228C0
-t1281507972
-s31598784
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/include/zlib.h
-c000000004C5A494E00000000000102A5
-t1280985422
-s66213
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/lib/libz.dylib
-c000000004C5A495000000000000123E0
-t1280985424
-s74720
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/Debugging.h
-c000000004CE512F90000000000000190
-t1290081017
-s400
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.h
-c000000004CE4CD2800000000000001B9
-t1290063144
-s441
-i<Foundation/Foundation.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m
-c000000004CE53429000000000000174C
-t1290089513
-s5964
-i"JPEG2moro.h"
-i"JPEG2moroInflater.h"
-i"JPEG2moroParser.h"
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.h
-c000000004CE4CD290000000000000128
-t1290063145
-s296
-i<Foundation/Foundation.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m
-c000000004CE4F4F80000000000000920
-t1290073336
-s2336
-i"JPEG2moroInflater.h"
-i<zlib.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.h
-c000000004CE506D30000000000000122
-t1290077907
-s290
-i<Foundation/Foundation.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m
-c000000004CE5094F0000000000000686
-t1290078543
-s1670
-i"JPEG2moroParser.h"
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/libjpeg2moro.a
-t1290089516
-s49376
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moro.o
-t1290089516
-s24072
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroInflater.o
-t1290088285
-s12952
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroParser.o
-t1290088285
-s11608
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/jpeg2moro.LinkFileList
-c000000004CE52F5C00000000000001CA
-t1290088284
-s458
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/jpeg2moro_Prefix.pch
-c000000004CE4CD4C0000000000000342
-t1290063180
-s834
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-i"Debugging.h"
-
-N/var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-cmzdsucqbayazcaafbduphgbrguu/jpeg2moro_Prefix.pch.gch
-t1290088285
-s15203376
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies311782316#311782316#0(0"0(0#1#0"8641768256#0"0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moro.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311782316.590873
-e311782316.685599
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moro.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@83"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m311782316#311782316#0(0"0(0#0#75"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m8638892320#2188"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/DerivedSources -DDEBUG=1 -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-cmzdsucqbayazcaafbduphgbrguu/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moro.o0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroInflater.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781085.436664
-e311781085.542156
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroInflater.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@91"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m311781085#311781085#0(0"0(0#0#83"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m8631417952#2204"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/DerivedSources -DDEBUG=1 -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-cmzdsucqbayazcaafbduphgbrguu/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroInflater.o0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroParser.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781085.542266
-e311781085.645009
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroParser.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m311781085#311781085#0(0"0(0#0#81"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m8628842336#2200"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/DerivedSources -DDEBUG=1 -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-cmzdsucqbayazcaafbduphgbrguu/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/JPEG2moroParser.o0#
-
-CLibtool /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/libjpeg2moro.a normal i386
-s311782316.685700
-e311782316.691482
-r1
-xLibtool
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/libjpeg2moro.a
-xnormal
-xi386
-o/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: file: /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/lib/libz.dylib is a dynamic library, not added to the static library
-lSLF07#2@62"Libtool build/Debug-iphonesimulator/libjpeg2moro.a normal i386311782316#311782316#0(236"/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: file: /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/lib/libz.dylib is a dynamic library, not added to the static library0(0#0#0"8660766528#954"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -filelist /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/Objects-normal/i386/jpeg2moro.LinkFileList -framework Foundation -framework UIKit -framework CoreGraphics /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/lib/libz.dylib -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/libjpeg2moro.a0#
-
-CProcessPCH /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-cmzdsucqbayazcaafbduphgbrguu/jpeg2moro_Prefix.pch.gch jpeg2moro_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781084.592430
-e311781085.435019
-r1
-xProcessPCH
-x/var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-cmzdsucqbayazcaafbduphgbrguu/jpeg2moro_Prefix.pch.gch
-xjpeg2moro_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile jpeg2moro_Prefix.pch311781084#311781085#0(0"0(0#0#76"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/jpeg2moro_Prefix.pch8620591328#2043"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/jpeg2moro-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/jpeg2moro.build/DerivedSources -DDEBUG=1 -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/jpeg2moro_Prefix.pch -o /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-cmzdsucqbayazcaafbduphgbrguu/jpeg2moro_Prefix.pch.gch0#
-

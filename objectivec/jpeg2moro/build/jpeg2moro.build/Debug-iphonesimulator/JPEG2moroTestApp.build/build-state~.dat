@@ -1,688 +1,0 @@
-TJPEG2moroTestApp
-v7
-r0
-t311781057.668119
-cCheck dependencies
-cProcessInfoPlistFile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/Info.plist JPEG2moroTestApp-Info.plist
-cCompileXIB /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.xib
-cCompileXIB /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/MainWindow.xib
-cCopyPlistFile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp-Info.plist TestApp/../JPEG2moroTestApp-Info.plist
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-1.jpg TestApp/meditate-alpha-1.jpg
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/wallpaper.png TestApp/wallpaper.png
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-8.jpg TestApp/meditate-alpha-8.jpg
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-16.jpg TestApp/meditate-alpha-16.jpg
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-1.jpg TestApp/alphatest-alpha-1.jpg
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-8.jpg TestApp/alphatest-alpha-8.jpg
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-16.jpg TestApp/alphatest-alpha-16.jpg
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-1.jpg TestApp/panel-alpha-1.jpg
-cCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-8.jpg TestApp/panel-alpha-8.jpg
-cProcessPCH /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch.gch jpeg2moro_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestAppViewController.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/main.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestApp_iPhoneAppDelegate.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhoneAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moro.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroInflater.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroParser.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp normal i386
-cGenerateDSYMFile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app.dSYM /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp
-cTouch /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
-c000000004C6C30170000000000000110
-t1282158615
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004C5A4DB60000000000295900
-t1280986550
-s2709760
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004C5A4DB0000000000029D580
-t1280986544
-s2741632
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004C5A4DA10000000000001466
-t1280986529
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004C6241ED00000000000009CD
-t1281507821
-s2509
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004C6242840000000001E228C0
-t1281507972
-s31598784
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/include/zlib.h
-c000000004C5A494E00000000000102A5
-t1280985422
-s66213
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/lib/libz.dylib
-c000000004C5A495000000000000123E0
-t1280985424
-s74720
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/Debugging.h
-c000000004CE512F90000000000000190
-t1290081017
-s400
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.h
-c000000004CE4CD2800000000000001B9
-t1290063144
-s441
-i<Foundation/Foundation.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m
-c000000004CE52EBF00000000000016DE
-t1290088127
-s5854
-i"JPEG2moro.h"
-i"JPEG2moroInflater.h"
-i"JPEG2moroParser.h"
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.h
-c000000004CE4CD290000000000000128
-t1290063145
-s296
-i<Foundation/Foundation.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m
-c000000004CE4F4F80000000000000920
-t1290073336
-s2336
-i"JPEG2moroInflater.h"
-i<zlib.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.h
-c000000004CE506D30000000000000122
-t1290077907
-s290
-i<Foundation/Foundation.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m
-c000000004CE5094F0000000000000686
-t1290078543
-s1670
-i"JPEG2moroParser.h"
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/MainWindow.xib
-c000000004CE4FD7100000000000043D1
-t1290075505
-s17361
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/../JPEG2moroTestApp-Info.plist
-c000000004CE500A400000000000002AE
-t1290076324
-s686
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/MainWindow.xib
-c000000004CE4FD7100000000000043D1
-t1290075505
-s17361
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.h
-c000000004CE517120000000000000202
-t1290082066
-s514
-i<UIKit/UIKit.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.m
-c000000004CE52ABF0000000000000C6A
-t1290087103
-s3178
-i"TestAppViewController.h"
-i"JPEG2moro.h"
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.xib
-c000000004CE517B500000000000051F4
-t1290082229
-s20980
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhone-Info.plist
-c000000004CE4F7550000000000000393
-t1290073941
-s915
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhoneAppDelegate.h
-c000000004CE4F6A7000000000000015C
-t1290073767
-s348
-i<UIKit/UIKit.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhoneAppDelegate.m
-c000000004CE4FF850000000000000AE4
-t1290076037
-s2788
-i"TestApp_iPhoneAppDelegate.h"
-i"TestAppViewController.h"
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-1.jpg
-c000000004CE5246C0000000000001DCC
-t1290085484
-s7628
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-16.jpg
-c000000004CE5246C0000000000005A61
-t1290085484
-s23137
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-8.jpg
-c000000004CE5246C0000000000004E37
-t1290085484
-s20023
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/main.m
-c000000004CE4FECA000000000000017F
-t1290075850
-s383
-i<UIKit/UIKit.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-1.jpg
-c000000004CE51D37000000000001E3EA
-t1290083639
-s123882
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-16.jpg
-c000000004CE51D37000000000001EE5F
-t1290083639
-s126559
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-8.jpg
-c000000004CE51D37000000000001E6BF
-t1290083639
-s124607
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-1.jpg
-c000000004CE529DF0000000000018085
-t1290086879
-s98437
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-16.jpg
-c000000004CE529DF0000000000018F29
-t1290086879
-s102185
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-8.jpg
-c000000004CE529DF0000000000018A18
-t1290086879
-s100888
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/untitled.h
-c000000004CE4F5A500000000000000DD
-t1290073509
-s221
-i<UIKit/UIKit.h>
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/untitled.m
-c000000004CE4F5A5000000000000058D
-t1290073509
-s1421
-i"untitled.h"
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/untitled.xib
-c000000004CE4F5A50000000000001853
-t1290073509
-s6227
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/wallpaper.jpg
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/wallpaper.png
-c000000004CE51793000000000001644F
-t1290082195
-s91215
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app
-t1290088257
-s578
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app.dSYM
-t1290088257
-s102
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/Info.plist
-t1290088256
-s515
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp
-t1290088257
-s38552
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp-Info.plist
-t1290088257
-s367
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/MainWindow.nib
-t1290088257
-s1538
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/PkgInfo
-t1290088256
-s8
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/TestAppViewController.nib
-t1290088257
-s2528
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/TestApp_iPhone-Info.plist
-t1290073941
-s502
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-1.jpg
-t1290088257
-s7628
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-16.jpg
-t1290088257
-s23137
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-8.jpg
-t1290088257
-s20023
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-1.jpg
-t1290088257
-s123882
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-16.jpg
-t1290088257
-s126559
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-8.jpg
-t1290088257
-s124607
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-1.jpg
-t1290088257
-s98437
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-16.jpg
-t1290086976
-s102185
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-8.jpg
-t1290088257
-s100888
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/untitled.nib
-t2
-s0
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/wallpaper.jpg
-t1290076706
-s44596
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/wallpaper.png
-t1290088257
-s91215
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moro.o
-t1290088257
-s23916
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroInflater.o
-t1290088257
-s12904
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroParser.o
-t1290088257
-s11492
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroTestApp.LinkFileList
-c000000004CE52F4000000000000003C7
-t1290088256
-s967
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestAppViewController.o
-t1290088257
-s49492
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestApp_iPhoneAppDelegate.o
-t1290088257
-s47912
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/main.o
-t1290088257
-s6544
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/untitled.o
-t2
-s0
-
-N/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/jpeg2moro_Prefix.pch
-c000000004CE4CD4C0000000000000342
-t1290063180
-s834
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-i"Debugging.h"
-
-N/var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-ehozcnxiqtybcpbphwxgbtyqqcnv/UIKit.h.gch
-t1290073756
-s15203312
-
-N/var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch.gch
-t1290087146
-s15203376
-
-N/var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-gtquvnyryxipeogghlkkyfmkvsld/jpeg2moro_Prefix.pch.gch
-t1290076578
-s15203376
-
-NJPEG2moroTestApp-Info.plist
-c000000004CE500A400000000000002AE
-t1290076324
-s686
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies311781056#311781056#0(0"0(0#1#0"8628774656#0"0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moro.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781057.336610
-e311781057.515745
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moro.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@83"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m311781057#311781057#0(0"0(0#0#75"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m8629917120#2266"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moro.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moro.o0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroInflater.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781057.421085
-e311781057.551500
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroInflater.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@91"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m311781057#311781057#0(0"0(0#0#83"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m8629254112#2282"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroInflater.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroInflater.o0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroParser.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781057.515852
-e311781057.593870
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroParser.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m311781057#311781057#0(0"0(0#0#81"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m8631024064#2278"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/Classes/JPEG2moroParser.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroParser.o0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestAppViewController.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781057.153660
-e311781057.336493
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestAppViewController.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@95"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.m311781057#311781057#0(0"0(0#0#87"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.m8631785664#2290"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestAppViewController.o0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestApp_iPhoneAppDelegate.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhoneAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781057.260325
-e311781057.418978
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestApp_iPhoneAppDelegate.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhoneAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@99"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhoneAppDelegate.m311781057#311781057#0(0"0(0#0#91"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhoneAppDelegate.m8630476192#2298"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhoneAppDelegate.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/TestApp_iPhoneAppDelegate.o0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/main.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311781057.154824
-e311781057.260222
-r1
-xCompileC
-xbuild/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/main.o
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/main.m311781057#311781057#0(0"0(0#0#70"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/main.m8631402912#2256"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -include /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/main.m -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/main.o0#
-
-CCompileC build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/untitled.o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/untitled.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileXIB /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/MainWindow.xib
-s311768409.814776
-e311768410.201629
-r1
-xCompileXIB
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib311768409#311768410#0(0"0(0#0#70"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/MainWindow.xib8623244768#630"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/MainWindow.nib /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
-
-CCompileXIB /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/MainWindow.xib
-s311781056.497000
-e311781057.028867
-r1
-xCompileXIB
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/MainWindow.xib
-lSLF07#2@33"CompileXIB TestApp/MainWindow.xib311781056#311781057#0(0"0(0#0#78"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/MainWindow.xib8631182176#638"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/MainWindow.nib /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
-
-CCompileXIB /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.xib
-s311781056.496195
-e311781057.153410
-r1
-xCompileXIB
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.xib
-lSLF07#2@44"CompileXIB TestApp/TestAppViewController.xib311781056#311781057#0(0"0(0#0#89"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.xib8631400000#660"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/TestAppViewController.nib /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestAppViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
-
-CCompileXIB /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/untitled.xib
-r0
-
-CCopyPlistFile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp-Info.plist TestApp/../JPEG2moroTestApp-Info.plist
-s311781057.028974
-e311781057.084586
-r1
-xCopyPlistFile
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp-Info.plist
-xTestApp/../JPEG2moroTestApp-Info.plist
-lSLF07#2@43"Copy TestApp/../JPEG2moroTestApp-Info.plist311781057#311781057#0(0"0(0#0#94"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/../JPEG2moroTestApp-Info.plist8628775264#456"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 TestApp/../JPEG2moroTestApp-Info.plist --outdir /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCopyPlistFile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/TestApp_iPhone-Info.plist TestApp/TestApp_iPhone-Info.plist
-s311766741.216050
-e311766741.663408
-r1
-xCopyPlistFile
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/TestApp_iPhone-Info.plist
-xTestApp/TestApp_iPhone-Info.plist
-lSLF07#2@38"Copy TestApp/TestApp_iPhone-Info.plist311766741#311766741#0(0"0(0#0#89"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/TestApp_iPhone-Info.plist8630522336#451"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 TestApp/TestApp_iPhone-Info.plist --outdir /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-1.jpg TestApp/alphatest-alpha-1.jpg
-s311781057.108842
-e311781057.128029
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-1.jpg
-xTestApp/alphatest-alpha-1.jpg
-lSLF07#2@34"Copy TestApp/alphatest-alpha-1.jpg311781057#311781057#0(0"0(0#0#85"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-1.jpg8624605216#533"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-1.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-16.jpg TestApp/alphatest-alpha-16.jpg
-s311781057.117166
-e311781057.129881
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-16.jpg
-xTestApp/alphatest-alpha-16.jpg
-lSLF07#2@35"Copy TestApp/alphatest-alpha-16.jpg311781057#311781057#0(0"0(0#0#86"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-16.jpg8629089984#534"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-16.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-8.jpg TestApp/alphatest-alpha-8.jpg
-s311781057.111900
-e311781057.128142
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/alphatest-alpha-8.jpg
-xTestApp/alphatest-alpha-8.jpg
-lSLF07#2@34"Copy TestApp/alphatest-alpha-8.jpg311781057#311781057#0(0"0(0#0#85"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-8.jpg8620128192#533"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/alphatest-alpha-8.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-1.jpg TestApp/meditate-alpha-1.jpg
-s311781057.084730
-e311781057.127559
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-1.jpg
-xTestApp/meditate-alpha-1.jpg
-lSLF07#2@33"Copy TestApp/meditate-alpha-1.jpg311781057#311781057#0(0"0(0#0#84"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-1.jpg8616839808#532"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-1.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-16.jpg TestApp/meditate-alpha-16.jpg
-s311781057.104353
-e311781057.127915
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-16.jpg
-xTestApp/meditate-alpha-16.jpg
-lSLF07#2@34"Copy TestApp/meditate-alpha-16.jpg311781057#311781057#0(0"0(0#0#85"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-16.jpg8630083616#533"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-16.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-8.jpg TestApp/meditate-alpha-8.jpg
-s311781057.088575
-e311781057.127805
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/meditate-alpha-8.jpg
-xTestApp/meditate-alpha-8.jpg
-lSLF07#2@33"Copy TestApp/meditate-alpha-8.jpg311781057#311781057#0(0"0(0#0#84"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-8.jpg8630122496#532"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/meditate-alpha-8.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-1.jpg TestApp/panel-alpha-1.jpg
-s311781057.119873
-e311781057.134633
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-1.jpg
-xTestApp/panel-alpha-1.jpg
-lSLF07#2@30"Copy TestApp/panel-alpha-1.jpg311781057#311781057#0(0"0(0#0#81"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-1.jpg8624115968#529"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-1.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-16.jpg TestApp/panel-alpha-16.jpg
-s311779776.910967
-e311779776.925871
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-16.jpg
-xTestApp/panel-alpha-16.jpg
-lSLF07#2@31"Copy TestApp/panel-alpha-16.jpg311779776#311779776#0(0"0(0#0#82"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-16.jpg8645313856#530"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-16.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-8.jpg TestApp/panel-alpha-8.jpg
-s311781057.123204
-e311781057.134395
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/panel-alpha-8.jpg
-xTestApp/panel-alpha-8.jpg
-lSLF07#2@30"Copy TestApp/panel-alpha-8.jpg311781057#311781057#0(0"0(0#0#81"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-8.jpg8620661408#529"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/panel-alpha-8.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/wallpaper.jpg TestApp/wallpaper.jpg
-s311769506.278530
-e311769506.323113
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/wallpaper.jpg
-xTestApp/wallpaper.jpg
-lSLF07#2@26"Copy TestApp/wallpaper.jpg311769506#311769506#0(0"0(0#0#77"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/wallpaper.jpg8630136224#525"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/wallpaper.jpg /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CCpResource build/Debug-iphonesimulator/JPEG2moroTestApp.app/wallpaper.png TestApp/wallpaper.png
-s311781057.086548
-e311781057.127692
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/JPEG2moroTestApp.app/wallpaper.png
-xTestApp/wallpaper.png
-lSLF07#2@26"Copy TestApp/wallpaper.png311781057#311781057#0(0"0(0#0#77"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/wallpaper.png8630442400#525"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/TestApp/wallpaper.png /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
-CGenerateDSYMFile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app.dSYM /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp
-s311781057.625789
-e311781057.658710
-r1
-xGenerateDSYMFile
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app.dSYM
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp
-lSLF07#2@136"GenerateDSYMFile build/Debug-iphonesimulator/JPEG2moroTestApp.app.dSYM build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp311781057#311781057#0(0"0(0#0#121"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp8619803648#461"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app.dSYM0#
-
-CLd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp normal i386
-s311781057.593960
-e311781057.625689
-r1
-xLd
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp
-xnormal
-xi386
-lSLF07#2@126"Link /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp311781057#311781057#0(0"0(0#0#0"8629963392#1066"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -filelist /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/Objects-normal/i386/JPEG2moroTestApp.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -framework UIKit -Xlinker -objc_abi_version -Xlinker 2 -framework CoreGraphics -framework Foundation -framework UIKit -lz -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/JPEG2moroTestApp0#
-
-CProcessInfoPlistFile /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/Info.plist JPEG2moroTestApp-Info.plist
-s311781056.470139
-e311781056.496091
-r1
-xProcessInfoPlistFile
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/Info.plist
-xJPEG2moroTestApp-Info.plist
-lSLF07#2@35"Process JPEG2moroTestApp-Info.plist311781056#311781056#0(0"0(0#0#83"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/JPEG2moroTestApp-Info.plist8631596256#557"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility JPEG2moroTestApp-Info.plist -genpkginfo /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app/Info.plist0#
-
-CProcessPCH /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-ehozcnxiqtybcpbphwxgbtyqqcnv/UIKit.h.gch /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
-s311766554.999722
-e311766556.393759
-r1
-xProcessPCH
-x/var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-ehozcnxiqtybcpbphwxgbtyqqcnv/UIKit.h.gch
-x/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@152"Precompile /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h311766555#311766556#0(0"0(0#0#141"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h8631484128#2135"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -c /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h -o /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UIKit-ehozcnxiqtybcpbphwxgbtyqqcnv/UIKit.h.gch0#
-
-CProcessPCH /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch.gch jpeg2moro_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s311779945.630754
-e311779946.671737
-r1
-xProcessPCH
-x/var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch.gch
-xjpeg2moro_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile jpeg2moro_Prefix.pch311779945#311779946#0(0"0(0#0#76"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/jpeg2moro_Prefix.pch8654390048#2114"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -DJPEG2MORO_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/jpeg2moro_Prefix.pch -o /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-bwcytbjdcbgeejbhibaiafptpxqs/jpeg2moro_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-gtquvnyryxipeogghlkkyfmkvsld/jpeg2moro_Prefix.pch.gch jpeg2moro_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s311769377.936739
-e311769379.088012
-r1
-xProcessPCH
-x/var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-gtquvnyryxipeogghlkkyfmkvsld/jpeg2moro_Prefix.pch.gch
-xjpeg2moro_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile jpeg2moro_Prefix.pch311769377#311769379#0(0"0(0#0#76"/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/jpeg2moro_Prefix.pch8630610272#2094"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-generated-files.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-own-target-headers.hmap -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-all-target-headers.hmap -iquote /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/JPEG2moroTestApp-project-headers.hmap -F/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/include -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources/i386 -I/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/jpeg2moro.build/Debug-iphonesimulator/JPEG2moroTestApp.build/DerivedSources -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/jpeg2moro_Prefix.pch -o /var/folders/KW/KWk+Fc7UGpaoZ44kNzjD+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/jpeg2moro_Prefix-gtquvnyryxipeogghlkkyfmkvsld/jpeg2moro_Prefix.pch.gch0#
-
-CTouch /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app
-s311781057.658802
-e311781057.668068
-r1
-xTouch
-x/Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app
-lSLF07#2@110"Touch /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app311781057#311781057#0(0"0(0#0#0"8628773888#321"    cd /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/andrew/work/2moro/jpeg2moro/objectivec/jpeg2moro/build/Debug-iphonesimulator/JPEG2moroTestApp.app0#
-
