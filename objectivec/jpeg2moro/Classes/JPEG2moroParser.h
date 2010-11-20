@@ -14,5 +14,6 @@
 }
 
 + (NSData *)extractAppSegment:(NSData *)jpg error:(NSError **)error;
++ (NSArray *)extractChunks:(NSData *)jpg error:(NSError **)error;
 
 @end

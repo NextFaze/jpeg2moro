@@ -69,6 +69,7 @@ class JPEG2moro
   end
 
   # find position to insert opacity information
+  # (just before SOS or EOI marker)
   def insert_position(jpeg_data)
     # parse jpeg data
     data = jpeg_data
@@ -101,11 +102,49 @@ class JPEG2moro
     end
   end
 
+  # create a 'chunk' named name, with the given data.
+  # (4 bytes)  Length
+  # (4 bytes)  Chunk type  (e.g. "ALPH" for alpha channel)
+  # (length bytes) Chunk data
+  def chunk(name, data)
+    raise "chunk name must be four characters long" unless name.length == 4
+    [data.length].pack("N") + name + data  # TODO: not sure if this is unsigned
+  end
+
+  # create one or more app10 application segments containing the given data.
+  # if data exceeds the maximum length of the app segment, it is split into multiple
+  # segments.  returns array of app10 segments.
+  # (2 bytes) APP10 marker  (0xFFE9)
+  # (2 bytes) Length of segment (including 2 byte length parameter)
+  # (length - 2 bytes) Chunk data
+  def app10_segments(data)
+    i = 0
+    len = data.length
+    ret = []
+    while i < len
+      seglen = len - i > 65535 ? 65535 : len - i
+      segdata = data[i, seglen]
+      debug "segment data length: " + segdata.length.to_s
+
+      mlength = segdata.length + 2 
+      header = [0xff, 0xe9].pack("C*")  # APP10 marker
+      header += [mlength].pack("S").unpack("C*").reverse.pack("C*")
+      header += segdata
+      ret.push header
+      i += seglen
+    end
+    ret
+  end
+
   # create opacity header
   def create_opacity_header
     img = Image.from_blob(@data).first  # original image data
     bit_depth = @convert_options[:depth]
     bit_depth = bit_depth.to_i
+
+    unless [1,8,16].include?(bit_depth)
+      raise "unsupported alpha bit depth: " + @convert_options[:depth].to_s
+    end
 
     debug "using bit depth: %d" % [bit_depth]
 
@@ -132,16 +171,13 @@ class JPEG2moro
     debug "deflated size: %d bytes" % [deflated.length]
 
     debug_dump(deflated, "compressed.dat")
+    
+    # create alpha chunk, pack into app10 segment(s)
+    alpha_data = [bit_depth].pack("C") + deflated
+    alpha_chunk = chunk("ALPH", alpha_data)
+    segments = app10_segments(alpha_chunk)
+    header = segments.join
 
-    # create header
-    # segment length includes 1 byte for bit depth info + 2 bytes for length param
-    mlength = deflated.length + 1 + 2 
-    header = [0xff, 0xe9].pack("C*")  # APP10 marker
-    header += [mlength].pack("S").unpack("C*").reverse.pack("C*")
-    header += [bit_depth].pack("C")
-    header += deflated
-
-    debug "alpha segment length: %d" % [mlength]
     debug_dump(header, "header.dat")
 
     header

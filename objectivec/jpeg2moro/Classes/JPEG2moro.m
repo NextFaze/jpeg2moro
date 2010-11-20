@@ -9,6 +9,8 @@
 #import "JPEG2moro.h"
 #import "JPEG2moroInflater.h"
 #import "JPEG2moroParser.h"
+#import "JPEG2moroChunk.h"
+#import "JPEG2moroChunkAlpha.h"
 
 @interface JPEG2moro (Private)
 - (void)readData:(NSData *)data;
@@ -156,7 +158,6 @@
 	// inflate alpha channel data
 	NSError *error = nil;
 	UIImage *jpeg = [[UIImage alloc] initWithData:data];
-	NSData *appsegment = [JPEG2moroParser extractAppSegment:data error:&error];
 
 	if(jpeg == nil) {
 		// invalid data?
@@ -164,24 +165,41 @@
 		return;
 	}
 	
-	if(error || [appsegment length] == 0) {
-		// could not find app segment
+	NSArray *chunks = [JPEG2moroParser extractChunks:data error:&error];
+	if(error || [chunks count] == 0) {
+		// could not parse chunks
 		// just return jpeg image data
-		LOG(@"app segment not found or error, returning plain jpeg image");
+		LOG(@"app segment chunks not found or error, returning plain jpeg image");
 		image = jpeg;
 		alpha = nil;
 		return;
 	}
+
+	// find alpha chunk
+
+	NSData *alphaCompressed = nil;
+	int alphaDepth;
 	
-	unsigned char *appbytes = (unsigned char *)[appsegment bytes];
-	int alphaDepth = *(unsigned char *)appbytes;  // first byte is alpha bit depth
+	for(JPEG2moroChunk *chunk in chunks) {
+		if([chunk.name isEqualToString:@"ALPH"]) {
+			JPEG2moroChunkAlpha *alphaChunk = (JPEG2moroChunkAlpha *)chunk;
+			alphaDepth = [alphaChunk bitDepth];
+			alphaCompressed = [alphaChunk compressedData];
+			break;
+		}
+	}
+
+	if(alphaCompressed == nil) {
+		LOG(@"could not find alpha chunk, returning plain jpeg image");
+		image = jpeg;
+		return;
+	}
 	
 	LOG(@"alpha channel bit depth: %d", alphaDepth);
-	NSData *alphaCompressed = [NSData dataWithBytes:(appbytes + 1) length:[appsegment length] - 1];
 	NSData *alphaData = [JPEG2moroInflater inflate:alphaCompressed error:&error];
 
 	if(alphaData == nil || error) {
-		LOG(@"error extracting alpha channel, returning plain jpeg image");
+		LOG(@"error decompressing alpha channel, returning plain jpeg image");
 		image = jpeg;
 		return;
 	}

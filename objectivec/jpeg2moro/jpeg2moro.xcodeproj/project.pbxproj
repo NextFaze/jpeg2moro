@@ -34,6 +34,14 @@
 		49FD93BF12973763003FFB4F /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD93BD12973763003FFB4F /* ImageViewController.m */; };
 		49FD93C012973763003FFB4F /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49FD93BE12973763003FFB4F /* ImageViewController.xib */; };
 		49FD9487129742A4003FFB4F /* alpha.dat in Resources */ = {isa = PBXBuildFile; fileRef = 49FD9486129742A4003FFB4F /* alpha.dat */; };
+		49FD95A412976345003FFB4F /* JPEG2moroChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD95A312976345003FFB4F /* JPEG2moroChunk.m */; };
+		49FD95A512976345003FFB4F /* JPEG2moroChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD95A312976345003FFB4F /* JPEG2moroChunk.m */; };
+		49FD95A612976345003FFB4F /* JPEG2moroChunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FD95A212976345003FFB4F /* JPEG2moroChunk.h */; };
+		49FD95A712976345003FFB4F /* JPEG2moroChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD95A312976345003FFB4F /* JPEG2moroChunk.m */; };
+		49FD95AA12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD95A912976395003FFB4F /* JPEG2moroChunkAlpha.m */; };
+		49FD95AB12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD95A912976395003FFB4F /* JPEG2moroChunkAlpha.m */; };
+		49FD95AC12976395003FFB4F /* JPEG2moroChunkAlpha.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FD95A812976395003FFB4F /* JPEG2moroChunkAlpha.h */; };
+		49FD95AD12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD95A912976395003FFB4F /* JPEG2moroChunkAlpha.m */; };
 		B531620E1294E67700BB19B7 /* JPEG2moro.m in Sources */ = {isa = PBXBuildFile; fileRef = B531620D1294E67700BB19B7 /* JPEG2moro.m */; };
 		B531620F1294E67700BB19B7 /* JPEG2moro.h in Headers */ = {isa = PBXBuildFile; fileRef = B531620C1294E67700BB19B7 /* JPEG2moro.h */; };
 		B53162101294E67700BB19B7 /* JPEG2moro.m in Sources */ = {isa = PBXBuildFile; fileRef = B531620D1294E67700BB19B7 /* JPEG2moro.m */; };
@@ -111,6 +119,10 @@
 		49FD93BD12973763003FFB4F /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		49FD93BE12973763003FFB4F /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		49FD9486129742A4003FFB4F /* alpha.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = alpha.dat; sourceTree = "<group>"; };
+		49FD95A212976345003FFB4F /* JPEG2moroChunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPEG2moroChunk.h; path = Classes/JPEG2moroChunk.h; sourceTree = "<group>"; };
+		49FD95A312976345003FFB4F /* JPEG2moroChunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moroChunk.m; path = Classes/JPEG2moroChunk.m; sourceTree = "<group>"; };
+		49FD95A812976395003FFB4F /* JPEG2moroChunkAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPEG2moroChunkAlpha.h; path = Classes/JPEG2moroChunkAlpha.h; sourceTree = "<group>"; };
+		49FD95A912976395003FFB4F /* JPEG2moroChunkAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moroChunkAlpha.m; path = Classes/JPEG2moroChunkAlpha.m; sourceTree = "<group>"; };
 		B531620C1294E67700BB19B7 /* JPEG2moro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPEG2moro.h; path = Classes/JPEG2moro.h; sourceTree = "<group>"; };
 		B531620D1294E67700BB19B7 /* JPEG2moro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moro.m; path = Classes/JPEG2moro.m; sourceTree = "<group>"; };
 		B53162811294F5A300BB19B7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -226,6 +238,10 @@
 				B53162841294F7DE00BB19B7 /* JPEG2moroInflater.m */,
 				49EC706C12953BF6003EF0C0 /* JPEG2moroParser.h */,
 				49EC706D12953BF6003EF0C0 /* JPEG2moroParser.m */,
+				49FD95A212976345003FFB4F /* JPEG2moroChunk.h */,
+				49FD95A312976345003FFB4F /* JPEG2moroChunk.m */,
+				49FD95A812976395003FFB4F /* JPEG2moroChunkAlpha.h */,
+				49FD95A912976395003FFB4F /* JPEG2moroChunkAlpha.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -316,6 +332,8 @@
 				B53162851294F7DE00BB19B7 /* JPEG2moroInflater.h in Headers */,
 				B53162E7129501D500BB19B7 /* Debugging.h in Headers */,
 				49EC706F12953BF6003EF0C0 /* JPEG2moroParser.h in Headers */,
+				49FD95A612976345003FFB4F /* JPEG2moroChunk.h in Headers */,
+				49FD95AC12976395003FFB4F /* JPEG2moroChunkAlpha.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +484,8 @@
 				49EC706E12953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
 				49FD9393129735B2003FFB4F /* HomeViewController.m in Sources */,
 				49FD93BF12973763003FFB4F /* ImageViewController.m in Sources */,
+				49FD95A512976345003FFB4F /* JPEG2moroChunk.m in Sources */,
+				49FD95AB12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +501,8 @@
 				B53162B81294FE0400BB19B7 /* JPEG2moroInflaterTestCase.m in Sources */,
 				49EC706112953A44003EF0C0 /* JPEG2moroTestCase.m in Sources */,
 				49EC707112953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
+				49FD95A412976345003FFB4F /* JPEG2moroChunk.m in Sources */,
+				49FD95AA12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +513,8 @@
 				B53162101294E67700BB19B7 /* JPEG2moro.m in Sources */,
 				B53162861294F7DE00BB19B7 /* JPEG2moroInflater.m in Sources */,
 				49EC707012953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
+				49FD95A712976345003FFB4F /* JPEG2moroChunk.m in Sources */,
+				49FD95AD12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
