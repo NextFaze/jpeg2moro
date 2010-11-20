@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49EC6F7112952D55003EF0C0 /* TestAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC6F6F12952D55003EF0C0 /* TestAppViewController.m */; };
-		49EC6F7212952D55003EF0C0 /* TestAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EC6F7012952D55003EF0C0 /* TestAppViewController.xib */; };
 		49EC6F7612952DA7003EF0C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC6F7312952DA7003EF0C0 /* main.m */; };
 		49EC6F7712952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC6F7512952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m */; };
 		49EC6FDD12953559003EF0C0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EC6FDC12953559003EF0C0 /* MainWindow.xib */; };
@@ -32,6 +30,10 @@
 		49EC717C12955BFA003EF0C0 /* alphatest-alpha-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC717912955BFA003EF0C0 /* alphatest-alpha-1.jpg */; };
 		49EC717D12955BFA003EF0C0 /* alphatest-alpha-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC717A12955BFA003EF0C0 /* alphatest-alpha-8.jpg */; };
 		49EC717E12955BFA003EF0C0 /* alphatest-alpha-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EC717B12955BFA003EF0C0 /* alphatest-alpha-16.jpg */; };
+		49FD9393129735B2003FFB4F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD9392129735B2003FFB4F /* HomeViewController.m */; };
+		49FD93BF12973763003FFB4F /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD93BD12973763003FFB4F /* ImageViewController.m */; };
+		49FD93C012973763003FFB4F /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49FD93BE12973763003FFB4F /* ImageViewController.xib */; };
+		49FD9487129742A4003FFB4F /* alpha.dat in Resources */ = {isa = PBXBuildFile; fileRef = 49FD9486129742A4003FFB4F /* alpha.dat */; };
 		B531620E1294E67700BB19B7 /* JPEG2moro.m in Sources */ = {isa = PBXBuildFile; fileRef = B531620D1294E67700BB19B7 /* JPEG2moro.m */; };
 		B531620F1294E67700BB19B7 /* JPEG2moro.h in Headers */ = {isa = PBXBuildFile; fileRef = B531620C1294E67700BB19B7 /* JPEG2moro.h */; };
 		B53162101294E67700BB19B7 /* JPEG2moro.m in Sources */ = {isa = PBXBuildFile; fileRef = B531620D1294E67700BB19B7 /* JPEG2moro.m */; };
@@ -84,9 +86,6 @@
 		32DBCF5E0370ADEE00C91783 /* jpeg2moro_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeg2moro_Prefix.pch; sourceTree = "<group>"; };
 		49EC6F6012952CD6003EF0C0 /* JPEG2moroTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPEG2moroTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EC6F6212952CD6003EF0C0 /* JPEG2moroTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "JPEG2moroTestApp-Info.plist"; path = "../JPEG2moroTestApp-Info.plist"; sourceTree = "<group>"; };
-		49EC6F6E12952D55003EF0C0 /* TestAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppViewController.h; sourceTree = "<group>"; };
-		49EC6F6F12952D55003EF0C0 /* TestAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppViewController.m; sourceTree = "<group>"; };
-		49EC6F7012952D55003EF0C0 /* TestAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAppViewController.xib; sourceTree = "<group>"; };
 		49EC6F7312952DA7003EF0C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49EC6F7412952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestApp_iPhoneAppDelegate.h; sourceTree = "<group>"; };
 		49EC6F7512952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestApp_iPhoneAppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +105,12 @@
 		49EC717912955BFA003EF0C0 /* alphatest-alpha-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alphatest-alpha-1.jpg"; sourceTree = "<group>"; };
 		49EC717A12955BFA003EF0C0 /* alphatest-alpha-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alphatest-alpha-8.jpg"; sourceTree = "<group>"; };
 		49EC717B12955BFA003EF0C0 /* alphatest-alpha-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alphatest-alpha-16.jpg"; sourceTree = "<group>"; };
+		49FD9391129735B2003FFB4F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		49FD9392129735B2003FFB4F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		49FD93BC12973763003FFB4F /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		49FD93BD12973763003FFB4F /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		49FD93BE12973763003FFB4F /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
+		49FD9486129742A4003FFB4F /* alpha.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = alpha.dat; sourceTree = "<group>"; };
 		B531620C1294E67700BB19B7 /* JPEG2moro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPEG2moro.h; path = Classes/JPEG2moro.h; sourceTree = "<group>"; };
 		B531620D1294E67700BB19B7 /* JPEG2moro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPEG2moro.m; path = Classes/JPEG2moro.m; sourceTree = "<group>"; };
 		B53162811294F5A300BB19B7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -242,9 +247,11 @@
 				49EC6F7312952DA7003EF0C0 /* main.m */,
 				49EC6F7412952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.h */,
 				49EC6F7512952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m */,
-				49EC6F6E12952D55003EF0C0 /* TestAppViewController.h */,
-				49EC6F6F12952D55003EF0C0 /* TestAppViewController.m */,
-				49EC6F7012952D55003EF0C0 /* TestAppViewController.xib */,
+				49FD9391129735B2003FFB4F /* HomeViewController.h */,
+				49FD9392129735B2003FFB4F /* HomeViewController.m */,
+				49FD93BC12973763003FFB4F /* ImageViewController.h */,
+				49FD93BD12973763003FFB4F /* ImageViewController.m */,
+				49FD93BE12973763003FFB4F /* ImageViewController.xib */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 		49EC702812953816003EF0C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				49FD9486129742A4003FFB4F /* alpha.dat */,
 				49EC717912955BFA003EF0C0 /* alphatest-alpha-1.jpg */,
 				49EC717A12955BFA003EF0C0 /* alphatest-alpha-8.jpg */,
 				49EC717B12955BFA003EF0C0 /* alphatest-alpha-16.jpg */,
@@ -403,7 +411,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EC6F7212952D55003EF0C0 /* TestAppViewController.xib in Resources */,
 				49EC6FDD12953559003EF0C0 /* MainWindow.xib in Resources */,
 				49EC6FFE12953677003EF0C0 /* JPEG2moroTestApp-Info.plist in Resources */,
 				49EC702612953812003EF0C0 /* meditate-alpha-1.jpg in Resources */,
@@ -413,6 +420,8 @@
 				49EC717C12955BFA003EF0C0 /* alphatest-alpha-1.jpg in Resources */,
 				49EC717D12955BFA003EF0C0 /* alphatest-alpha-8.jpg in Resources */,
 				49EC717E12955BFA003EF0C0 /* alphatest-alpha-16.jpg in Resources */,
+				49FD93C012973763003FFB4F /* ImageViewController.xib in Resources */,
+				49FD9487129742A4003FFB4F /* alpha.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,12 +459,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EC6F7112952D55003EF0C0 /* TestAppViewController.m in Sources */,
 				49EC6F7612952DA7003EF0C0 /* main.m in Sources */,
 				49EC6F7712952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m in Sources */,
 				49EC7031129538BF003EF0C0 /* JPEG2moro.m in Sources */,
 				49EC7032129538BF003EF0C0 /* JPEG2moroInflater.m in Sources */,
 				49EC706E12953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
+				49FD9393129735B2003FFB4F /* HomeViewController.m in Sources */,
+				49FD93BF12973763003FFB4F /* ImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

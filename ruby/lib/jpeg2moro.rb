@@ -117,6 +117,8 @@ class JPEG2moro
     data = alpha.export_pixels_to_str(0, 0, alpha.columns, alpha.rows,
                                       "A", storage)
 
+    debug_dump(alpha.to_blob, "alpha.png")
+
     if bit_depth == 1
       # pack into bit string
       data = data.unpack('C*').map { |i| i == 0xff ? 1 : 0 }.join

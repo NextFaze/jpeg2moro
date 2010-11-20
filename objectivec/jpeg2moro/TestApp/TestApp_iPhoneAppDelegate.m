@@ -7,11 +7,10 @@
 //
 
 #import "TestApp_iPhoneAppDelegate.h"
-#import "TestAppViewController.h"
 
 @implementation TestApp_iPhoneAppDelegate
 
-@synthesize window;
+@synthesize window, navigationController;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -19,9 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	    // Override point for customization after application launch.
 
-    // Add the tab bar controller's view to the window and display.
-	TestAppViewController *controller = [[TestAppViewController alloc] initWithNibName:@"TestAppViewController" bundle:nil];
-    [window addSubview:controller.view];
+    [window addSubview:navigationController.view];
     [window makeKeyAndVisible];
 	
     return YES;
@@ -77,6 +74,7 @@
 
 - (void)dealloc {
     [window release];
+	[navigationController release];
 	
     [super dealloc];
 }

@@ -11,7 +11,7 @@
 #import "JPEG2moroParser.h"
 
 @interface JPEG2moro (Private)
-- (UIImage *)readData:(NSData *)data;
+- (void)readData:(NSData *)data;
 @end
 
 @implementation JPEG2moro
@@ -21,7 +21,6 @@
 + (JPEG2moro *)imageNamed:(NSString *)name {
 	// TODO: caching
 	NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
-	//NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"jpg" inDirectory:@""];
 	NSString *path = [NSString stringWithFormat:@"%@/%@", resourcePath, name];
 	return [self imageWithContentsOfFile:path];
 }
@@ -39,21 +38,24 @@
 - (id)init {
 	if(self = [super init]) {
 		image = nil;
+		alpha = nil;
 	}
 	return self;
 }
 
-- (id)initWithData:(NSData *)data {
+- (id)initWithData:(NSData *)data {	
 	if(data == nil) return nil;   // invalid data
 	
-	if(self = [super init]) {
-		image = [self readData:data];
+	if(self = [self init]) {
+		[self readData:data];
+		if(image == nil) return nil;    // could not read image
 	}
 	return self;
 }
 
 - (void)dealloc {
 	[image release];
+	[alpha release];
 	[super dealloc];
 }
 
@@ -63,22 +65,39 @@
 
 #pragma mark Private
 
-// Returns a copy of the given image, adding an alpha channel if it doesn't already have one
+// Returns a copy of the given image, adding an alpha channel
 - (UIImage *)imageWithAlpha:(UIImage *)img {
     CGImageRef imageRef = img.CGImage;
     size_t width = CGImageGetWidth(imageRef);
     size_t height = CGImageGetHeight(imageRef);
-    
+	size_t bytesPerPixel = 4;
+    size_t bitsPerComponent = 8;
+	size_t bytesPerRow = width * bytesPerPixel;
+	size_t imageSize;
+	
+	// round up bytesPerRow to nearest multiple of 16
+	if(bytesPerRow % 16)
+		bytesPerRow += 16 - bytesPerRow % 16;
+	
+	imageSize = bytesPerRow * height;
+	
+	LOG(@"bytesPerRow: %d, imageSize: %d", bytesPerRow, imageSize);
+	
 	CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB(); //CGImageGetColorSpace(imageRef);
 
-    // The bitsPerComponent and bitmapInfo values are hard-coded to prevent an "unsupported parameter combination" error
-    CGContextRef offscreenContext = CGBitmapContextCreate(NULL,
+	void *data = calloc(imageSize, 1);
+	if(data == nil) {
+		LOG(@"memory allocation error");
+		return nil;
+	}
+	
+    CGContextRef offscreenContext = CGBitmapContextCreate(data,
                                                           width,
                                                           height,
-                                                          8,
-                                                          0,
+                                                          bitsPerComponent,
+                                                          bytesPerRow,
                                                           colorspace,
-                                                          kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
+                                                          kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedLast);
     
     // Draw the image into the context and retrieve the new image, which will now have an alpha layer
     CGContextDrawImage(offscreenContext, CGRectMake(0, 0, width, height), imageRef);
@@ -89,42 +108,34 @@
 	CGColorSpaceRelease(colorspace);
     CGContextRelease(offscreenContext);
     CGImageRelease(imageRefWithAlpha);
-    
+    free(data);
+	
     return imageWithAlpha;
 }
 
-- (UIImage *)addAlphaChannel:(NSData *)alpha image:(UIImage *)jpeg depth:(int)alphaDepth {
-	size_t bytesPerRow = (jpeg.size.width * alphaDepth + 7) / 8;
+- (UIImage *)addAlphaChannel:(NSData *)alphaData image:(UIImage *)jpeg depth:(int)alphaDepth {
+	size_t width = jpeg.size.width;
+	size_t height = jpeg.size.height;
+	size_t bytesPerRow = (width * alphaDepth + 7) / 8;
+	int pixels = width * height;
 	CGImageRef maskImage = nil;
+	bool interpolate = true;
 	
-	LOG(@"adding alpha channel");
+	LOG(@"image size: (%d,%d)", width, height);
+	LOG(@"adding alpha channel. #pixels = %d, alpha length = %d, alpha depth = %d, bytesPerRow = %d", pixels, [alphaData length], alphaDepth, bytesPerRow);
 	// add alpha channel to the jpeg image
 	jpeg = [self imageWithAlpha:jpeg];
 	
-	if(alphaDepth == 16) {
-		// need to create an image to use as the mask (CGImageMask is limited to 8 bpp)
-		// create mask image (monochrome, 16 bit)
-		CGBitmapInfo bitmapInfo = kCGBitmapByteOrder16Big; //kCGBitmapFloatComponents;
-		CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceGray(); //CGColorSpaceCreateDeviceRGB();
-		CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, [alpha bytes], [alpha length], NULL);
-		maskImage = CGImageCreate(jpeg.size.width, jpeg.size.height, 16, 16,
-								  bytesPerRow, colorspace, bitmapInfo, provider, NULL, true, kCGRenderingIntentDefault);
-		CGColorSpaceRelease(colorspace);
-		CGDataProviderRelease(provider);
-	}
-	else {
-		// can use a mask
-		// need to invert the bits in the alpha channel (mask is an inverse alpha).
-		NSMutableData *inverse = [NSMutableData dataWithData:alpha];
-		unsigned char *bytes = (unsigned char *)[inverse mutableBytes];
-		for(unsigned int i = 0; i < [inverse length]; i++) *bytes++ = *bytes ^ 0xff;
-		
-		CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, [inverse bytes], [inverse length], NULL);		
-		maskImage = CGImageMaskCreate(jpeg.size.width, jpeg.size.height, alphaDepth, alphaDepth,
-									  bytesPerRow, provider, NULL, true);
-		CGDataProviderRelease(provider);
-	}
-
+	// create mask image (monochrome)
+	CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault; // alphaDepth == 16 ? kCGBitmapByteOrder16Big : kCGBitmapByteOrderDefault;
+	CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceGray(); //CGColorSpaceCreateDeviceRGB();
+	CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, [alphaData bytes], [alphaData length], NULL);
+	
+	maskImage = CGImageCreate(width, height, alphaDepth, alphaDepth,
+							  bytesPerRow, colorspace, bitmapInfo, provider, NULL, interpolate, kCGRenderingIntentDefault);
+	CGColorSpaceRelease(colorspace);
+	CGDataProviderRelease(provider);
+	
 	// combine the jpeg and the mask
 	LOG(@"combining image and alpha mask");
 	CGImageRef masked = CGImageCreateWithMask([jpeg CGImage], maskImage);
@@ -140,24 +151,26 @@
 }
 
 // read jpeg2moro format, return UIImage
-- (UIImage *)readData:(NSData *)data {
+- (void)readData:(NSData *)data {
 	
 	// inflate alpha channel data
 	NSError *error = nil;
-	UIImage *jpeg = [UIImage imageWithData:data];
+	UIImage *jpeg = [[UIImage alloc] initWithData:data];
 	NSData *appsegment = [JPEG2moroParser extractAppSegment:data error:&error];
 
 	if(jpeg == nil) {
 		// invalid data?
 		LOG(@"UIImage could not parse jpeg data, returning nil");
-		return nil;
+		return;
 	}
 	
 	if(error || [appsegment length] == 0) {
 		// could not find app segment
 		// just return jpeg image data
 		LOG(@"app segment not found or error, returning plain jpeg image");
-		return jpeg;
+		image = jpeg;
+		alpha = nil;
+		return;
 	}
 	
 	unsigned char *appbytes = (unsigned char *)[appsegment bytes];
@@ -165,18 +178,21 @@
 	
 	LOG(@"alpha channel bit depth: %d", alphaDepth);
 	NSData *alphaCompressed = [NSData dataWithBytes:(appbytes + 1) length:[appsegment length] - 1];
-	NSData *alpha = [JPEG2moroInflater inflate:alphaCompressed error:&error];
-	
-	if(alpha == nil || error) {
+	NSData *alphaData = [JPEG2moroInflater inflate:alphaCompressed error:&error];
+
+	if(alphaData == nil || error) {
 		LOG(@"error extracting alpha channel, returning plain jpeg image");
-		return jpeg;
+		image = jpeg;
+		return;
 	}
-		
+	
 	// read jpeg image, add alpha channel
-	UIImage *ret = [self addAlphaChannel:alpha image:jpeg depth:alphaDepth];
+	UIImage *ret = [self addAlphaChannel:alphaData image:jpeg depth:alphaDepth];
+	[jpeg release];
 	
 	// return image with alpha added
-	return ret;
+	image = [ret retain];
+	alpha = [alphaData retain];  // not sure why we need to retain this, but weirdness & crashing ensues if we don't
 }
 
 @end

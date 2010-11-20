@@ -1,5 +1,5 @@
 //
-//  TestAppViewController.h
+//  ImageViewController.h
 //  jpeg2moro
 //
 //  Created by Andrew on 18/11/10.
@@ -9,16 +9,18 @@
 #import <UIKit/UIKit.h>
 
 
-@interface TestAppViewController : UIViewController {
-	NSArray *imageList, *imageNames;
+@interface ImageViewController : UIViewController {
 	UILabel *labelFile;
 	UIImageView *imageView;
 	int imageNumber;
+	NSString *imageName;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *labelFile;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, copy) NSString *imageName;
 
-@property (nonatomic, retain) NSArray *imageList, *imageNames;
+- (id)initWithImageName:(NSString *)imageName;
+- (IBAction)reloadImage:(id)sender;
 
 @end
