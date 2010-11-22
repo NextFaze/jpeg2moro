@@ -7,6 +7,10 @@ include Magick
 
 class JPEG2moro
   DEBUG = 1
+  VERSION = "0.0.1"
+
+  DEFAULT_ALPHA_DEPTH = 8
+  DEFAULT_QUALITY = 70
 
   class << self
     attr_accessor :debug
@@ -28,15 +32,27 @@ class JPEG2moro
     return JPEG2moro.new(:data => data)
   end
 
+  def to_s
+    @data
+  end
+
+  # save output_file with the given options
+  def save(output_file, options = {})
+    output = convert(options)
+    File.open(output_file, "w") { |f| f.print output }
+  end
+
+  private
+
   # convert data to jpeg2moro format
   def convert(options = {})
-    @convert_options = options
-    @convert_options[:depth] ||= 1
+    @convert_options = options.clone
+    @convert_options[:alpha_depth] ||= DEFAULT_ALPHA_DEPTH
 
     # convert image data to jpg format
     img = Image.from_blob(@data).first
     jpeg_data = img.to_blob { |i|
-      i.quality = 70
+      i.quality =  (options[:quality] || DEFAULT_QUALITY).to_i
       i.format = 'jpg'
     }
     # insert alpha channel into jpeg data
@@ -45,12 +61,6 @@ class JPEG2moro
     # return jpeg2moro object (contains alpha channel)
     return JPEG2moro.new(:data => jpeg_data)
   end
-
-  def to_s
-    @data
-  end
-
- # private
 
   def debug(msg)
     puts msg if self.class.debug
@@ -139,11 +149,11 @@ class JPEG2moro
   # create opacity header
   def create_opacity_header
     img = Image.from_blob(@data).first  # original image data
-    bit_depth = @convert_options[:depth]
+    bit_depth = @convert_options[:alpha_depth]
     bit_depth = bit_depth.to_i
 
     unless [1,8,16].include?(bit_depth)
-      raise "unsupported alpha bit depth: " + @convert_options[:depth].to_s
+      raise "unsupported alpha bit depth: " + @convert_options[:alpha_depth].to_s
     end
 
     debug "using bit depth: %d" % [bit_depth]

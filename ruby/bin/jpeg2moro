@@ -11,6 +11,8 @@ ARG_SPEC = [ [ '--help', '-h', GetoptLong::NO_ARGUMENT ],
              [ '--output', '-o', GetoptLong::REQUIRED_ARGUMENT ],
              [ '--debug', '-d', GetoptLong::NO_ARGUMENT ],
              [ '--alpha-depth', '-a', GetoptLong::REQUIRED_ARGUMENT ],
+             [ '--quality', '-q', GetoptLong::REQUIRED_ARGUMENT ],
+             [ '--verbose', '-v', GetoptLong::NO_ARGUMENT ]
            ]
 
 private
@@ -36,13 +38,15 @@ end
 def usage
   usage = <<EOM
 jpeg2moro - converts image files to jpeg2moro format
-usage: jpeg2moro [OPTIONS] [image_file] ...
+usage: jpeg2moro [OPTIONS] source_file [source_file ...]
 
 options:
-  --help, -h:        this help message
-  --output, -o:      specify output filename
-  --debug, -d:       turn on debugging output and file dumping
-  --alpha-depth, -a: set depth for alpha channel
+  --help, -h:         this help message
+  --output, -o:       specify output filename
+  --debug, -d:        turn on debugging output and file dumping
+  --alpha-depth, -a:  set depth for alpha channel, default #{JPEG2moro::DEFAULT_ALPHA_DEPTH}
+  --quality, -q:      jpeg compression level (0-100), default #{JPEG2moro::DEFAULT_QUALITY}
+  --verbose, -v:      verbose mode
 
 EOM
 end
@@ -69,16 +73,30 @@ begin
     exit 1
   end
 
+  output_opts = {}
+  [:alpha_depth, :quality].each do |i|
+    output_opts[i] = opts[i] if opts[i]
+  end
+
   # convert input files to jpeg2moro format
   input_files.each do |input_file|
+    unless File.exist?(input_file)
+      puts "error: '#{input_file}' file not found"
+      next
+    end
+
     output_file = opts[:output] || output_filename(input_file)
     if output_file == input_file
       puts "error: input file '#{input_file}' would overwrite itself, skipping"
       next
     end
+
     jpeg = JPEG2moro.new(input_file)
-    output = jpeg.convert(:depth => opts[:alpha_depth])
-    File.open(output_file, "w") { |f| f.print output }
+    jpeg.save(output_file, output_opts)
+
+    if opts[:verbose]
+      puts "%s -> %s" % [File.basename(input_file), File.basename(output_file)]
+    end
   end
 
 end
