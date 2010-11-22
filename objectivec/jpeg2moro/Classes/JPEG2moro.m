@@ -48,7 +48,7 @@ static JPEG2moroCache *cache = nil;
 }
 
 + (JPEG2moro *)imageWithData:(NSData *)data {
-	return [[JPEG2moro alloc] initWithData:data];
+	return [[[JPEG2moro alloc] initWithData:data] autorelease];
 }
 
 #pragma mark Public instance methods
