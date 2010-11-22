@@ -11,7 +11,6 @@
 
 @interface JPEG2moro : NSObject {
 	UIImage *image;
-	NSData *alpha;  // this needs to be retained, not sure why?
 }
 
 + (JPEG2moro *)imageNamed:(NSString *)name;

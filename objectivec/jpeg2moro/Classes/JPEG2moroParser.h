@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "JPEG2moroChunkAlpha.h"
 
 @interface JPEG2moroParser : NSObject {
 
@@ -15,5 +15,6 @@
 
 + (NSData *)extractAppSegment:(NSData *)jpg error:(NSError **)error;
 + (NSArray *)extractChunks:(NSData *)jpg error:(NSError **)error;
++ (JPEG2moroChunkAlpha *)alphaChunk:(NSData *)jpg error:(NSError **)error;
 
 @end

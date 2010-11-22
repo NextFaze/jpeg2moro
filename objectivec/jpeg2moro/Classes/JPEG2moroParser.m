@@ -23,6 +23,17 @@
 			byte == 0x01) ? YES : NO;
 }
 
+
++ (JPEG2moroChunkAlpha *)alphaChunk:(NSData *)jpg error:(NSError **)error {
+	NSArray *chunks = [self extractChunks:jpg error:error];
+	
+	for(JPEG2moroChunk *chunk in chunks) {
+		if([chunk isKindOfClass:[JPEG2moroChunkAlpha class]])
+			return (JPEG2moroChunkAlpha *)chunk;
+	}
+	return nil;
+}
+
 + (NSArray *)extractChunks:(NSData *)jpg error:(NSError **)error {
 	NSData *app10 = [self extractAppSegment:jpg error:error];
 	NSMutableArray *chunks = [NSMutableArray array];

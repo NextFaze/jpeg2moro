@@ -11,20 +11,36 @@
 #import "JPEG2moroParser.h"
 #import "JPEG2moroChunk.h"
 #import "JPEG2moroChunkAlpha.h"
+#import "JPEG2moroCache.h"
 
 @interface JPEG2moro (Private)
-- (void)readData:(NSData *)data;
+- (UIImage *)readData:(NSData *)data;
 @end
 
 @implementation JPEG2moro
 
 #pragma mark Class methods
 
+static JPEG2moroCache *cache = nil;
+
++ (void)initialize {
+	cache = [[JPEG2moroCache alloc] init];
+}
+
 + (JPEG2moro *)imageNamed:(NSString *)name {
-	// TODO: caching
+	JPEG2moro *jpeg = [cache imageForKey:name];
+	if(jpeg) {
+		LOG(@"returning cached image %@", name);
+		return jpeg;
+	}
+
+	// not cached, load image	
 	NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
 	NSString *path = [NSString stringWithFormat:@"%@/%@", resourcePath, name];
-	return [self imageWithContentsOfFile:path];
+	jpeg = [self imageWithContentsOfFile:path];
+	[cache setImage:jpeg forKey:name];
+
+	return jpeg;
 }
 
 + (JPEG2moro *)imageWithContentsOfFile:(NSString *)filename {
@@ -40,24 +56,23 @@
 - (id)init {
 	if(self = [super init]) {
 		image = nil;
-		alpha = nil;
 	}
 	return self;
 }
 
 - (id)initWithData:(NSData *)data {	
 	if(data == nil) return nil;   // invalid data
+	UIImage *img = [self readData:data];
+	if(img == nil) return nil;    // could not read image
 	
 	if(self = [self init]) {
-		[self readData:data];
-		if(image == nil) return nil;    // could not read image
+		image = [img retain];
 	}
 	return self;
 }
 
 - (void)dealloc {
 	[image release];
-	[alpha release];
 	[super dealloc];
 }
 
@@ -131,7 +146,9 @@
 	// create mask image (monochrome)
 	CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault; // alphaDepth == 16 ? kCGBitmapByteOrder16Big : kCGBitmapByteOrderDefault;
 	CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceGray(); //CGColorSpaceCreateDeviceRGB();
-	CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, [alphaData bytes], [alphaData length], NULL);
+
+	// alphaData is retained by the provider and the CGImage we create
+	CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef) alphaData);
 	
 	maskImage = CGImageCreate(width, height, alphaDepth, alphaDepth,
 							  bytesPerRow, colorspace, bitmapInfo, provider, NULL, interpolate, kCGRenderingIntentDefault);
@@ -153,64 +170,40 @@
 }
 
 // read jpeg2moro format, return UIImage
-- (void)readData:(NSData *)data {
+- (UIImage *)readData:(NSData *)data {
 	
-	// inflate alpha channel data
+	// create a UIImage from the data (no alpha channel)
 	NSError *error = nil;
-	UIImage *jpeg = [[UIImage alloc] initWithData:data];
+	UIImage *jpeg = [UIImage imageWithData:data];
 
 	if(jpeg == nil) {
 		// invalid data?
 		LOG(@"UIImage could not parse jpeg data, returning nil");
-		return;
+		return nil;
 	}
 	
-	NSArray *chunks = [JPEG2moroParser extractChunks:data error:&error];
-	if(error || [chunks count] == 0) {
-		// could not parse chunks
-		// just return jpeg image data
-		LOG(@"app segment chunks not found or error, returning plain jpeg image");
-		image = jpeg;
-		alpha = nil;
-		return;
-	}
-
-	// find alpha chunk
-
-	NSData *alphaCompressed = nil;
-	int alphaDepth;
-	
-	for(JPEG2moroChunk *chunk in chunks) {
-		if([chunk.name isEqualToString:@"ALPH"]) {
-			JPEG2moroChunkAlpha *alphaChunk = (JPEG2moroChunkAlpha *)chunk;
-			alphaDepth = [alphaChunk bitDepth];
-			alphaCompressed = [alphaChunk compressedData];
-			break;
-		}
-	}
+	// find alpha chunk within the data
+	JPEG2moroChunkAlpha *alphaChunk = [JPEG2moroParser alphaChunk:data error:&error];
+	NSData *alphaCompressed = [alphaChunk compressedData];
+	int alphaDepth = [alphaChunk bitDepth];
 
 	if(alphaCompressed == nil) {
 		LOG(@"could not find alpha chunk, returning plain jpeg image");
-		image = jpeg;
-		return;
+		return jpeg;
 	}
 	
-	LOG(@"alpha channel bit depth: %d", alphaDepth);
+	// inflate alpha channel data
 	NSData *alphaData = [JPEG2moroInflater inflate:alphaCompressed error:&error];
-
 	if(alphaData == nil || error) {
 		LOG(@"error decompressing alpha channel, returning plain jpeg image");
-		image = jpeg;
-		return;
+		return jpeg;
 	}
 	
-	// read jpeg image, add alpha channel
+	// add alpha channel to the image
 	UIImage *ret = [self addAlphaChannel:alphaData image:jpeg depth:alphaDepth];
-	[jpeg release];
 	
 	// return image with alpha added
-	image = [ret retain];
-	alpha = [alphaData retain];  // not sure why we need to retain this, but weirdness & crashing ensues if we don't
+	return ret;
 }
 
 @end

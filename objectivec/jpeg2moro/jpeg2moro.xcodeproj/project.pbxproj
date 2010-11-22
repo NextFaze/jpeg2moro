@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49CCD95E129A0B2100191F89 /* JPEG2moroCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCD95D129A0B2100191F89 /* JPEG2moroCache.m */; };
+		49CCD95F129A0B2100191F89 /* JPEG2moroCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CCD95C129A0B2100191F89 /* JPEG2moroCache.h */; };
+		49CCD960129A0B2100191F89 /* JPEG2moroCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCD95D129A0B2100191F89 /* JPEG2moroCache.m */; };
+		49CCD961129A0B2100191F89 /* JPEG2moroCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCD95D129A0B2100191F89 /* JPEG2moroCache.m */; };
 		49EC6F7612952DA7003EF0C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC6F7312952DA7003EF0C0 /* main.m */; };
 		49EC6F7712952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC6F7512952DA7003EF0C0 /* TestApp_iPhoneAppDelegate.m */; };
 		49EC6FDD12953559003EF0C0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EC6FDC12953559003EF0C0 /* MainWindow.xib */; };
@@ -92,6 +96,8 @@
 
 /* Begin PBXFileReference section */
 		32DBCF5E0370ADEE00C91783 /* jpeg2moro_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeg2moro_Prefix.pch; sourceTree = "<group>"; };
+		49CCD95C129A0B2100191F89 /* JPEG2moroCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEG2moroCache.h; sourceTree = "<group>"; };
+		49CCD95D129A0B2100191F89 /* JPEG2moroCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEG2moroCache.m; sourceTree = "<group>"; };
 		49EC6F6012952CD6003EF0C0 /* JPEG2moroTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPEG2moroTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EC6F6212952CD6003EF0C0 /* JPEG2moroTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "JPEG2moroTestApp-Info.plist"; path = "../JPEG2moroTestApp-Info.plist"; sourceTree = "<group>"; };
 		49EC6F7312952DA7003EF0C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -242,6 +248,8 @@
 				49FD95A312976345003FFB4F /* JPEG2moroChunk.m */,
 				49FD95A812976395003FFB4F /* JPEG2moroChunkAlpha.h */,
 				49FD95A912976395003FFB4F /* JPEG2moroChunkAlpha.m */,
+				49CCD95C129A0B2100191F89 /* JPEG2moroCache.h */,
+				49CCD95D129A0B2100191F89 /* JPEG2moroCache.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -334,6 +342,7 @@
 				49EC706F12953BF6003EF0C0 /* JPEG2moroParser.h in Headers */,
 				49FD95A612976345003FFB4F /* JPEG2moroChunk.h in Headers */,
 				49FD95AC12976395003FFB4F /* JPEG2moroChunkAlpha.h in Headers */,
+				49CCD95F129A0B2100191F89 /* JPEG2moroCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +495,7 @@
 				49FD93BF12973763003FFB4F /* ImageViewController.m in Sources */,
 				49FD95A512976345003FFB4F /* JPEG2moroChunk.m in Sources */,
 				49FD95AB12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */,
+				49CCD95E129A0B2100191F89 /* JPEG2moroCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +513,7 @@
 				49EC707112953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
 				49FD95A412976345003FFB4F /* JPEG2moroChunk.m in Sources */,
 				49FD95AA12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */,
+				49CCD961129A0B2100191F89 /* JPEG2moroCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +526,7 @@
 				49EC707012953BF6003EF0C0 /* JPEG2moroParser.m in Sources */,
 				49FD95A712976345003FFB4F /* JPEG2moroChunk.m in Sources */,
 				49FD95AD12976395003FFB4F /* JPEG2moroChunkAlpha.m in Sources */,
+				49CCD960129A0B2100191F89 /* JPEG2moroCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
