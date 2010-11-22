@@ -134,12 +134,11 @@ static JPEG2moroCache *cache = nil;
 	size_t width = jpeg.size.width;
 	size_t height = jpeg.size.height;
 	size_t bytesPerRow = (width * alphaDepth + 7) / 8;
-	int pixels = width * height;
 	CGImageRef maskImage = nil;
 	bool interpolate = true;
 	
 	LOG(@"image size: (%d,%d)", width, height);
-	LOG(@"adding alpha channel. #pixels = %d, alpha length = %d, alpha depth = %d, bytesPerRow = %d", pixels, [alphaData length], alphaDepth, bytesPerRow);
+	LOG(@"adding alpha channel.  alpha length = %d, alpha depth = %d, bytesPerRow = %d", [alphaData length], alphaDepth, bytesPerRow);
 	// add alpha channel to the jpeg image
 	jpeg = [self imageWithAlpha:jpeg];
 	
